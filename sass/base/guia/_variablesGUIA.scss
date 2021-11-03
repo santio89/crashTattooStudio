@@ -1,0 +1,39 @@
+$color-principal:red;
+$color-secundario:blue;
+$color-terciario:yellow;
+
+/* $max-width: 
+$font-principal:;
+$font-secundaria:;
+$font-size-h1:;
+$font-size-h2:;
+$font-size-h3:;
+$font-size-p:; */
+
+
+/* LISTAS */
+
+$coloresList:
+red,
+blue,
+orange,
+black;
+
+.cuadrado{
+    background-color: nth($coloresList, 2);
+    color: nth($coloresList, 4);
+}
+
+
+/* MAPS */
+
+$colores: (
+    /* key: value */
+    principal: red,
+    color-texto: blue,
+    color-botones: yellow,
+);
+
+.circulo{
+    background-color: map-get($colores, principal);
+}

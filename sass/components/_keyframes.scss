@@ -1,0 +1,86 @@
+@keyframes titulo{
+    0% {
+        letter-spacing: 5vw;
+        font-size: 0;
+    }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(248, 18, 152, .75),
+      -0.05em -0.025em 0 rgba(194, 18, 248, .75),
+      -0.025em 0.05em 0 rgba(61, 184, 255, .75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(248, 18, 152, .75),
+      -0.05em -0.025em 0 rgba(194, 18, 248, .75),
+      -0.025em 0.05em 0 rgba(61, 184, 255, .75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(248, 18, 152, .75),
+      0.025em 0.025em 0 rgba(194, 18, 248, .75),
+      -0.05em -0.05em 0 rgba(61, 184, 255, .75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(248, 18, 152, .75),
+      0.025em 0.025em 0 rgba(194, 18, 248, .75),
+      -0.05em -0.05em 0 rgba(61, 184, 255, .75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(248, 18, 152, .75),
+      0.05em 0 0 rgba(194, 18, 248, .75), 0 -0.05em 0 rgba(61, 184, 255, .75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(248, 18, 152, .75),
+      0.05em 0 0 rgba(194, 18, 248, .75), 0 -0.05em 0 rgba(61, 184, 255, .75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(248, 18, 152, .75),
+      -0.025em -0.025em 0 rgba(194, 18, 248, .75),
+      -0.025em -0.05em 0 rgba(61, 184, 255, .75);
+  }
+}
+
+@keyframes lineaGradienteAnimation{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes borderAnimation{
+    0%{border-image: linear-gradient(90deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    5%{border-image: linear-gradient(99deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    10%{border-image: linear-gradient(108deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    15%{border-image: linear-gradient(117deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    20%{border-image: linear-gradient(126deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    25%{border-image: linear-gradient(135deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    30%{border-image: linear-gradient(144deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    35%{border-image: linear-gradient(153deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    40%{border-image: linear-gradient(162deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    45%{border-image: linear-gradient(171deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    50%{border-image: linear-gradient(180deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    50%{border-image: linear-gradient(189deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    60%{border-image: linear-gradient(198deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    65%{border-image: linear-gradient(207deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    70%{border-image: linear-gradient(216deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    75%{border-image: linear-gradient(225deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    80%{border-image: linear-gradient(234deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    85%{border-image: linear-gradient(243deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    90%{border-image: linear-gradient(252deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    95%{border-image: linear-gradient(261deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+    100%{border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+}
+
+@keyframes logoAnimation{
+    0%{
+        text-shadow: 0 0 .8rem map-get($colores, segundo)
+    }
+    100%{
+        text-shadow: 0 0 1.8rem map-get($colores, segundo);
+    }
+}
+
+@keyframes buttonBoxShadow{
+    0%{box-shadow: 0 0 .5rem 0 map-get($colores, tercero)}
+    50%{box-shadow: 0 0 .5rem 0 map-get($colores, segundo)}
+}

@@ -1,0 +1,93 @@
+.footer{  
+    width: 100%;
+    background-color: map-get($colores, quinto);
+    color: map-get($colores, cuarto);
+    text-align: center;
+    
+    @include flexbox (column wrap, center, center);
+
+    &__social{
+        margin-top: calc(1vw + 1vh);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    &__social__link{
+        color: map-get($colores, cuarto);
+        font-size: calc(10rem + 4vw);
+        margin-left: 2vw;
+        margin-right: 2vw;       
+        outline: none;
+        transition: 400ms;
+        &:hover, &:focus{
+            text-shadow: 0.05em 0 0 rgba(248, 18, 152, .75), -0.05em -0.025em 0 rgba(194, 18, 248, .75), -0.025em 0.05em 0 rgba(61, 184, 255, .75);
+            transition: 400ms;           
+        }
+        &:active{
+            text-shadow: 0.025em 0 0 rgba(248, 18, 152, .75), -0.0125em -0.025em 0 rgba(194, 18, 248, .75), -0.0125em 0.025em 0 rgba(61, 184, 255, .75);
+            transition: 200ms; 
+        }
+    }
+
+    &__santi{
+        @include font ($font-secundaria, 400, normal, calc(1rem + .2vw));
+        align-self: flex-start;
+        margin-left: .2rem;
+    }
+
+    &__copyright{
+        @include font ($font-secundaria, 400, normal, calc(1rem + .2vw));
+        border-top: .1rem solid map-get($colores, cuarto);
+        align-self: center;
+        width: 100%;
+    }
+
+    &__sitemap{
+        @include font ($font-principal, 600, normal, calc(1rem + 1.4vw));
+        text-align: center;
+        margin: calc(1vw + 1vh) auto;
+        &__ul{
+            @include flexbox (row wrap, space-evenly, center);
+        }
+        
+        &__link{
+            position: relative;
+            color: map-get($colores, cuarto);    
+            margin: 0 .5rem;
+            outline: none;
+            text-shadow: 0.05em 0 0 rgba(248, 18, 152, .25), -0.05em -0.025em 0 rgba(194, 18, 248, .25), -0.025em 0.05em 0 rgba(61, 184, 255, .25);
+            &__spanA, &__spanB{
+                position: absolute;
+                inset: 0;
+                opacity: .8;
+            }
+            &:hover, &:focus{         
+                animation: glitch 500ms infinite;              
+            }       
+            &:hover &__spanA, &:focus &__spanA{   
+                clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+                transform: translate(-.0125em, -.00625em);      
+                animation: glitch 625ms infinite;            
+            }   
+            &:hover &__spanB, &:focus &__spanB{ 
+                clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+                transform: translate(.0125em, .00625em);        
+                animation: glitch 415ms infinite;           
+            } 
+        }
+        &__whatsapp{  
+            font-size: calc(2rem + 6vw);
+            color: #075E54; 
+            outline: none;
+            &:hover, &:focus{
+                color: #25D366;       
+            } 
+            &:active{
+                text-shadow: 0 0 .4rem #25D366;
+            }  
+        }
+    }
+}

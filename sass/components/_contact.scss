@@ -1,0 +1,178 @@
+.contactInfo{   
+    @include flexbox (row wrap, center, center);
+    flex-shrink: 0;
+    margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto;
+
+    &__gmap{ 
+        width: 45vw;
+        max-width: 80vw;
+        height: 50vh;
+        border:.1rem solid map-get($colores, primero);
+        border-radius: calc(.5vw + .5vh);   
+    }
+    
+    &__ul{
+        text-align: left;
+        width: 45vw; 
+        max-width: 80vw;
+        color: map-get($colores, primero);
+        @include font($font-principal, 400, italic, calc(.8rem + .8vw + .8vh));  
+        line-height: 1.5;
+    }
+    
+    &__li{
+        margin: 2.5vw;
+    }
+}
+
+/* INICIO FORM */
+
+.contactForm{
+    @include flexbox (column wrap, center, center);
+    @include font ($font-principal, 800, italic, map-get($font-size, form));      
+    color: map-get($colores, primero);
+    margin: calc(2vw + 2vh) auto calc(4vw + 4vh) auto; 
+
+    &__motivoInput{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        &:focus+label, &:checked+label{
+            box-shadow: 0px .5rem 1rem -.5rem map-get($colores, tercero);
+            filter: none;
+        }
+    }
+
+    &__motivoLabel{
+        font-size: calc(1.2em + 1vw);   
+        font-style: italic;
+        padding: calc(.4vw + .4vh);
+        margin: 0 1vw calc(1vw + 1vh) 1vw;
+        outline: none;  
+        border-radius: calc(.5vw + .5vh);
+        border: 0px solid transparent;
+        border-top: calc(.5rem + .5vw) solid transparent;
+        border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+        border-image-slice: 1;
+        box-shadow: 0px .5rem 1rem -.5rem map-get($colores, primero);
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: all 200ms, filter 500ms;
+
+        &:hover{
+            box-shadow: 0px .5rem 1rem -.5rem map-get($colores, tercero);
+            filter: grayscale(0%);
+            transition: filter 500ms;
+        }
+    }
+
+    &__nombre, &__email{
+        margin-top: calc(.2vw + .2vh);
+        margin-bottom: calc(.2vw + .2vh);
+        width: 80vw;
+        height: 10vh;
+        font-weight: 400;
+        font-size: 1.2em;
+        color: map-get($colores, primero);
+        border:none;
+        outline: none;
+        border-bottom: .1vw solid map-get($colores, primero);  
+        outline: none;
+        font-style: italic;
+
+        &::placeholder{
+            color: rgba(25, 29, 50, .5);
+            font-style: italic;
+        }
+    }
+
+    &__textArea{
+        font-weight: 400;
+        margin-top: 2vh;    
+        border:none;
+        outline: none;
+        border-bottom: .1vw solid map-get($colores, primero);
+        resize: none;
+        width: 80vw;
+        height: 15vh;
+        font-size: 1em;
+        outline: none; 
+
+        &::placeholder{
+            color: rgba(25, 29, 50, .5);
+            font-style: italic;
+        }
+    }
+
+    &__file{
+        font-size: .6em;
+        width: 80vw;
+        color: map-get($colores, primero);
+        cursor: pointer;
+
+        &:focus{
+            outline: 1px solid map-get($colores, primero);
+        }
+    }
+
+    &__reset{
+        width: 40vw;
+        min-width: 118px;
+        padding: .2em;
+        border-radius: calc(.5vw + .5vh);
+        border: none;
+        outline: none;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 1.4em;
+        margin: calc(2vw + 2vh) auto 0 auto;
+        background-color: map-get($colores, primero);
+        cursor: pointer;
+        font-family: inherit;
+        font-style: italic;
+        background: linear-gradient(90deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+        background-size: 200% 200%; 
+
+        &:hover, &:focus{
+            box-shadow: 0 0 .5rem 0rem map-get($colores, segundo);
+            animation: lineaGradienteAnimation 2s linear infinite alternate-reverse;
+        }
+        
+        &:active{
+            box-shadow: 0 0 .3rem 0rem map-get($colores, segundo);
+            animation: lineaGradienteAnimation 1s linear infinite alternate-reverse;
+        }
+    }
+
+    &__enviar{
+        width: 40vw;
+        min-width: 118px;
+        padding: .2em;
+        border-radius: calc(.5vw + .5vh);
+        border: none;
+        outline: none;
+        text-align: center;
+        font-weight: bold;
+        color: map-get($colores, cuarto);
+        font-size: 1.4em;
+        margin: calc(2vw + 2vh) auto 0 auto;
+        background-color: map-get($colores, primero);
+        cursor: pointer;
+        font-family: inherit;
+        font-style: italic;
+        background: linear-gradient(90deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+        background-size: 200% 200%; 
+
+        &:hover, &:focus{
+            box-shadow: 0 0 .5rem 0 map-get($colores, tercero);
+            animation: lineaGradienteAnimation 2s linear infinite alternate-reverse;
+        }
+        &:active{
+            box-shadow: 0 0 .25rem 0 map-get($colores, tercero);
+            animation: lineaGradienteAnimation 1s linear infinite alternate-reverse;
+        }
+    }
+}
+
+/* FIN FORM */

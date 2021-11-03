@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, a, h1, h2, p, body, header, section, footer, .container, .container-fluid, .row, .col{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;
+    scroll-padding-top: 4rem;
+    overflow-x: hidden;
+}
+
+body{
+    @include font ($font-principal, 400, normal, 1rem);
+    color: map-get($colores, primero);
+    background-color: map-get($colores, fondo);
+    line-height: initial;
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;   
+}
+
+a, ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover{
+    color: map-get($colores, cuarto);
+}
+
+p, a, ul, h1, h2, table, label, input{
+    transition: font-size 200ms;
+}   
+
+.section{      
+    @include flexbox (column wrap, space-evenly, center);    
+    text-align: center;   
+    align-content:center;
+}
+
+
+.landing{
+    width: 100vw;
+    height: calc(100vh - .5rem);
+    min-width: 100vw;
+    max-width: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.landing__video{
+    width: 100%;   
+    height: calc(100vh - .5rem);
+    object-fit: cover;
+}
+
+.landing__overlay{
+    width: 100%;
+    height: calc(100vh - .5rem);
+    position: absolute;
+    top: 0;
+    background: linear-gradient(270deg, map-get($colores, primero),map-get($colores, tercero) , map-get($colores, primero));
+    opacity:  60%; 
+}
+
+.landing_overlay__text{
+    margin-top: calc(4rem + 1vw + 1vh);
+    color: map-get($colores, primero);
+}
+.text{
+    &__p{
+        @include font($font-principal, 400, italic, map-get($font-size, p));
+        line-height: 0;
+        animation: titulo 2500ms 1; 
+    }
+    
+    &__h1{
+        @include font($font-principal, 900, normal, map-get($font-size, h1));
+        letter-spacing: calc(.5vw + .5vh);  
+    } 
+    
+    &__h2{
+        @include font($font-principal, 800, normal, map-get($font-size, h2));   
+        width: 100%;
+        background-color: map-get($colores, primero);   
+        color: map-get($colores, cuarto);     
+        padding-top: calc(2vw + 2vh);
+        padding-bottom: calc(2vw + 2vh);
+        margin: 0;
+        text-shadow: 0 0 .4rem map-get($colores, segundo);
+    }
+    
+    &__h3{
+        @include font($font-principal, 800, normal, map-get($font-size, h3));  
+        background-color:map-get($colores, primero);
+        color: map-get($colores, cuarto);    
+        width: 100%;
+        text-shadow: 0 0 .4rem map-get($colores, segundo);
+        text-align: center;
+        margin-top: calc(2vw + 2vh);
+    
+        &--faq{
+            @include font($font-principal, 600, italic, 1.4em);
+            padding: .5rem;
+            margin: 0;
+            text-align: left; 
+        }
+    }
+}
+
+
+.lineaGradiente{
+    width: 100%;
+    height: .5rem;
+    background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+    background-size: 500% 500%;
+    animation: lineaGradienteAnimation 20000ms linear infinite;
+}
+
+.bigButton{
+    @include font($font-principal, 900, normal, calc(1.2rem + 1.8vw + 1.8vh)); 
+    background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+    background-size: 200% 200%;
+    color: map-get($colores, cuarto);
+    border-radius: calc(1vw + 1vh); 
+    padding: calc(.5rem + .5vw + .5vh);
+    margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;   
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 .5rem 0 #191D32;
+    text-shadow: 0; 
+    transition: 150ms;
+    max-width: 90%;
+    text-align: center;
+    &:hover, &:focus{
+        padding-top: calc(.25rem + .5vw + .5vh);    
+        padding-bottom: calc(.25rem + .5vw + .5vh);    
+        animation: 1000ms logoAnimation linear infinite alternate-reverse, 5000ms lineaGradienteAnimation linear infinite alternate-reverse, buttonBoxShadow 2000ms linear infinite alternate-reverse;
+        transition: 150ms;      
+        margin: calc(.25rem + 3vw + 3vh) auto calc(.25rem + 3vw + 3vh) auto;    
+    }
+    &:active{
+        animation: 5000ms logoAnimation linear infinite alternate-reverse, 2500ms lineaGradienteAnimation linear infinite alternate-reverse, buttonBoxShadow 1000ms linear infinite alternate-reverse;
+        box-shadow: 0 0 .25rem 0;
+        padding-top: calc(.125rem + .5vw + .5vh);
+        padding-bottom: calc(.125rem + .5vw + .5vh);
+        transition: 150ms;
+        margin: calc(.375rem + 3vw + 3vh) auto calc(.375rem + 3vw + 3vh) auto; 
+    }
+}
+
+.gridBoard{
+    width: 100vw;
+    height: 10vw;    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    cursor: pointer;
+
+    &__keyA{
+        background-color: map-get($colores, segundo);
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        transition: 500ms;
+
+        &:hover{
+            opacity: .75;
+        }
+        &:active{
+            opacity: 1;
+        }
+    }
+
+    &__keyB{
+        background-color: map-get($colores, primero);
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        transition: 500ms;
+        &:hover{
+            opacity: .75;
+        }
+        &:active{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+
+
+
+

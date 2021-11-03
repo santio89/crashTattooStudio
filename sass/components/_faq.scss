@@ -1,0 +1,69 @@
+.faq{
+    background-color: map-get($colores, fondo);
+    margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;
+    @include font ($font-principal, 400, normal, map-get($font-size, faq));     
+    @include flexbox(column wrap, center, center);
+    color: map-get($colores, primero);   
+    text-align: left;
+    line-height: 1.5;
+
+    &__pregunta{
+        cursor: pointer;
+        margin-bottom: calc(1vw + 1vh);
+        width: 100%;
+    }
+
+    &__respuesta{
+        border: none;
+        width: 100%;
+        font-size: 1.1em;
+        margin: 0 auto calc(2vw + 2vh) auto;  
+    } 
+
+    &__enviaDiseño{
+        font-weight: bold;
+        color: map-get($colores, primero);
+
+        &:hover, &:focus{
+            color: map-get($colores, segundo);
+         }
+    }
+
+    &__mediosPagoImg{
+        display: block;
+        margin: 1vw auto 0 auto;
+        max-width: 80%;
+        min-width: 420px;
+        height: auto;
+    }
+    
+    &__piercingTable{
+        border-radius: calc(.5vw + .5vh);
+        margin: 0 auto 1vw auto;
+        text-align: center;
+        width: 80%;
+        height: auto;
+        min-width: 420px;
+        font-size: 1.1em; 
+        border-collapse: collapse;
+        background-color: map-get($colores, primero);
+        color: map-get($colores, cuarto);  
+
+        &__th{
+            text-shadow: 0 0 .4rem map-get($colores, segundo);
+            border-bottom: .1em solid map-get($colores, fondo);
+        }
+    }
+    
+  
+}
+
+
+
+  
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+.header{ 
+    @include flexbox (row wrap, flex-end, flex-end);
+    color: map-get($colores, cuarto);
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 1;
+    background-color: rgba(14, 16, 26, 0.5);
+    height: 4rem;
+    border-bottom: .1rem solid map-get($colores, cuarto);
+    
+    &__logo{    
+        @include font ($font-principal, 900, italic, 3.5rem);        
+        margin-right: auto;
+        margin-left: .5rem;       
+        color: map-get($colores, cuarto);
+        text-shadow: 0 0 .4rem map-get($colores, segundo);
+        transition: 250ms;
+        outline: none;
+        &:hover, &:focus{
+            color: map-get($colores, segundo);
+            text-shadow: 0 0 .8rem map-get($colores, segundo);
+            animation: 1000ms logoAnimation linear infinite alternate-reverse;
+        }
+        &:active{
+            animation:500ms logoAnimation linear infinite alternate-reverse;
+        }
+        &--404{
+            font-size: calc(2rem + 4vw);
+            line-height: 2;
+            word-spacing: calc(.4vw + .4vh);
+            text-shadow: 0 0 .8rem map-get($colores, segundo);
+        }
+    }
+
+    &__burgerIcon{
+        font-size: 0;
+        margin-right: auto;
+        margin-left: .5rem;
+        color: map-get($colores, cuarto);
+        display: none;
+    }
+   
+};
+
+.nav{
+    &__list{
+        @include flexbox (row wrap, space-evenly, center);
+        @include font ($font-principal, 800, normal, 2.2rem);
+        text-shadow: 0 0 .1rem map-get($colores, primero);  
+    }
+    &__link{
+        color: map-get($colores, cuarto);    
+        margin: 0 .5rem;
+        outline: none;
+        &:hover, &:focus{
+            text-shadow: 0 0 .4rem map-get($colores, segundo);    
+        }
+        &--active{
+            text-shadow: 0 0 .4rem map-get($colores, segundo);    
+        }
+        &__arrow{
+            display: none;
+        }
+    }
+
+    &__submenu{
+        position: relative;
+        
+        &__list{
+            position: absolute;
+            top: 2.5rem;
+            text-align: right;
+            width: 100%;
+            font-size: .7em;
+            background-color: rgba(25, 29, 50, .9);
+            border-radius: 0 0 0 calc(.4vw + .4vh);
+            text-shadow: 0 0 .2rem map-get($colores, primero); 
+            display: none; 
+        }
+
+        &:hover &__list{
+            @include flexbox (column wrap, flex-start, flex-end);
+        }
+
+    }
+
+    &__whatsapp{  
+        font-size: 4rem;
+        background: transparent;
+        color: #075E54; 
+        text-shadow: none;
+        outline: none;
+        &:hover, &:focus{
+            color: #25D366;
+            text-shadow: none;
+        }  
+        &:active{
+            text-shadow: 0 0 .4rem #25D366;
+        }    
+    }
+  
+}
+

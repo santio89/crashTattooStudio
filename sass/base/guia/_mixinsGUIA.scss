@@ -1,0 +1,15 @@
+
+@mixin cuadrado ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin flexbox ($direction, $justify, $wrap){
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: center;
+}
+
+/* donde lo quiera llamar: @include botones (20, 20) */
