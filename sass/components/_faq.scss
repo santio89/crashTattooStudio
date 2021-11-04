@@ -18,6 +18,9 @@
         width: 100%;
         font-size: 1.1em;
         margin: 0 auto calc(2vw + 2vh) auto;  
+        &--reserva{
+            text-align: center;
+        }
     } 
 
     &__enviaDiseño{

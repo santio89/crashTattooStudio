@@ -135,9 +135,13 @@ p, a, ul, h1, h2, table, label, input{
     display: inline-block;
     border: none;
     outline: none;
-    animation: 6000ms buttonTextShadow linear infinite alternate-reverse, 5000ms lineaGradienteAnimation linear infinite alternate-reverse, 4000ms buttonBorder infinite linear alternate;
+    outline: .15rem solid white;
+    outline-offset:.5rem;
     position: relative;
-    
+    text-align: center;
+    transition: 300ms;
+    max-width: 90%;
+
     &::before {
         content: '';
         position: absolute;
@@ -148,28 +152,24 @@ p, a, ul, h1, h2, table, label, input{
         background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo));
         background-size: 400%;
         animation: 4000ms buttonBorder infinite linear alternate;
+        transition: 300ms;
       }
     
-    text-shadow: 0; 
-    transition: 150ms;
-    max-width: 90%;
-    text-align: center;
-    
     &:hover, &:focus{
-        padding-top: calc(.25rem + .5vw + .5vh);    
-        padding-bottom: calc(.25rem + .5vw + .5vh);    
+        padding-top: calc(.25rem + .25vw + .25vh);    
+        padding-bottom: calc(.25rem + .25vw + .25vh);    
         animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 4000ms lineaGradienteAnimation linear infinite alternate-reverse, 3000ms buttonBorder infinite linear alternate;
-        transition: 150ms;      
-        margin: calc(.25rem + 3vw + 3vh) auto calc(.25rem + 3vw + 3vh) auto;    
-        outline-offset: .5rem;
+        transition: 300ms;      
+        margin: calc(.25rem + 3.25vw + 3.25vh) auto calc(.25rem + 3.25vw + 3.25vh) auto;    
+        outline-offset: -.1rem;
     }
 
     &:active{
         animation: 2000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse, 2000ms buttonBorder infinite linear alternate;
-        padding-top: calc(.125rem + .5vw + .5vh);
-        padding-bottom: calc(.125rem + .5vw + .5vh);
-        transition: 150ms;
-        margin: calc(.375rem + 3vw + 3vh) auto calc(.375rem + 3vw + 3vh) auto; 
+        padding-top: calc(.125rem + .125vw + .125vh);
+        padding-bottom: calc(.125rem + .125vw + .125vh);
+        transition: 300ms;
+        margin: calc(.375rem + 3.375vw + 3.375vh) auto calc(.375rem + 3.375vw + 3.375vh) auto;  
     }
 }
 
