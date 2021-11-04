@@ -139,20 +139,31 @@ p, a, ul, h1, h2, table, label, input {
   display: inline-block;
   border: none;
   outline: none;
-  box-shadow: 0 0 .5rem 0 #191D32;
+  animation: 6000ms buttonTextShadow linear infinite alternate-reverse, 5000ms lineaGradienteAnimation linear infinite alternate-reverse, 4000ms buttonBorder infinite linear alternate;
+  position: relative;
   text-shadow: 0;
   transition: 150ms;
   max-width: 90%;
   text-align: center; }
+  .bigButton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: -.4rem;
+    border-radius: inherit;
+    background: linear-gradient(270deg, #3db8ff, #f81298);
+    background-size: 400%;
+    animation: 4000ms buttonBorder infinite linear alternate; }
   .bigButton:hover, .bigButton:focus {
     padding-top: calc(.25rem + .5vw + .5vh);
     padding-bottom: calc(.25rem + .5vw + .5vh);
-    animation: 1000ms logoAnimation linear infinite alternate-reverse, 5000ms lineaGradienteAnimation linear infinite alternate-reverse, buttonBoxShadow 2000ms linear infinite alternate-reverse;
+    animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 4000ms lineaGradienteAnimation linear infinite alternate-reverse, 3000ms buttonBorder infinite linear alternate;
     transition: 150ms;
-    margin: calc(.25rem + 3vw + 3vh) auto calc(.25rem + 3vw + 3vh) auto; }
+    margin: calc(.25rem + 3vw + 3vh) auto calc(.25rem + 3vw + 3vh) auto;
+    outline-offset: .5rem; }
   .bigButton:active {
-    animation: 5000ms logoAnimation linear infinite alternate-reverse, 2500ms lineaGradienteAnimation linear infinite alternate-reverse, buttonBoxShadow 1000ms linear infinite alternate-reverse;
-    box-shadow: 0 0 .25rem 0;
+    animation: 2000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse, 2000ms buttonBorder infinite linear alternate;
     padding-top: calc(.125rem + .5vw + .5vh);
     padding-bottom: calc(.125rem + .5vw + .5vh);
     transition: 150ms;
@@ -830,11 +841,21 @@ p, a, ul, h1, h2, table, label, input {
   100% {
     text-shadow: 0 0 1.8rem #f81298; } }
 
-@keyframes buttonBoxShadow {
+@keyframes buttonTextShadow {
   0% {
-    box-shadow: 0 0 0.5rem 0 #3db8ff; }
+    text-shadow: 0 0 0.8rem #f81298; }
   50% {
-    box-shadow: 0 0 0.5rem 0 #f81298; } }
+    text-shadow: 0 0 1.8rem #3db8ff; }
+  100% {
+    text-shadow: 0 0 0.8rem #f81298; } }
+
+@keyframes buttonBorder {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 @media all and (max-width: 1600px) {
   .gallery__img {
