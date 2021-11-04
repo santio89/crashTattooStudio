@@ -80,7 +80,27 @@
     }
 }
 
-@keyframes buttonBoxShadow{
-    0%{box-shadow: 0 0 .5rem 0 map-get($colores, tercero)}
-    50%{box-shadow: 0 0 .5rem 0 map-get($colores, segundo)}
+@keyframes buttonTextShadow{
+  0%{
+      text-shadow: 0 0 .8rem map-get($colores, segundo)
+  }
+  50%{
+      text-shadow: 0 0 1.8rem map-get($colores, tercero);
+  }
+  100%{
+    text-shadow: 0 0 .8rem map-get($colores, segundo)
+}
+  
+}
+
+@keyframes buttonBorder{
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
