@@ -167,7 +167,7 @@ p, a, ul, h1, h2, table, label, input {
     animation: 2000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse, 2000ms buttonBorder infinite linear alternate;
     padding-top: calc(.125rem + .125vw + .125vh);
     padding-bottom: calc(.125rem + .125vw + .125vh);
-    transition: 300ms;
+    transition: 150ms;
     margin: calc(.375rem + 3.375vw + 3.375vh) auto calc(.375rem + 3.375vw + 3.375vh) auto; }
 
 .gridBoard {
