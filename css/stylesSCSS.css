@@ -566,7 +566,8 @@ p, a, ul, h1, h2, table, label, input {
     font-size: 1.1em;
     margin: 0 auto calc(2vw + 2vh) auto; }
     .faq__respuesta--reserva {
-      text-align: center; }
+      text-align: center;
+      line-height: initial; }
   .faq__enviaDiseño {
     font-weight: bold;
     color: #191D32; }
