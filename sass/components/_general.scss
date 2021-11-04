@@ -140,6 +140,7 @@ p, a, ul, h1, h2, table, label, input{
     transition: 150ms;
     max-width: 90%;
     text-align: center;
+    
     &:hover, &:focus{
         padding-top: calc(.25rem + .5vw + .5vh);    
         padding-bottom: calc(.25rem + .5vw + .5vh);    
