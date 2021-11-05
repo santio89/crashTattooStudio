@@ -21,6 +21,12 @@
     .footer__social{
         grid-template-columns: 1fr 1fr;
     }  
+    .carouselGalleryA, .carouselGalleryC{
+        display: none;
+    }
+    .carouselGalleryB{
+        display: block;
+    }
  }
 
 @media all and (max-width:1024px){ 
@@ -109,12 +115,6 @@
         grid-column: 1 / 2;
         justify-self: right;
     }   
-    .carouselGalleryA, .carouselGalleryC{
-        display: none;
-    }
-    .carouselGalleryB{
-        display: block;
-    }
 }
 
 @media all and (max-width:768px){ 

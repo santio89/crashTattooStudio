@@ -48,27 +48,12 @@
 }
 
 @keyframes borderAnimation{
-    0%{border-image: linear-gradient(90deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    5%{border-image: linear-gradient(99deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    10%{border-image: linear-gradient(108deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    15%{border-image: linear-gradient(117deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    20%{border-image: linear-gradient(126deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    25%{border-image: linear-gradient(135deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    30%{border-image: linear-gradient(144deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    35%{border-image: linear-gradient(153deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    40%{border-image: linear-gradient(162deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    45%{border-image: linear-gradient(171deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    50%{border-image: linear-gradient(180deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    50%{border-image: linear-gradient(189deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    60%{border-image: linear-gradient(198deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    65%{border-image: linear-gradient(207deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    70%{border-image: linear-gradient(216deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    75%{border-image: linear-gradient(225deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    80%{border-image: linear-gradient(234deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    85%{border-image: linear-gradient(243deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    90%{border-image: linear-gradient(252deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    95%{border-image: linear-gradient(261deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
-    100%{border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));border-image-slice: 1;}
+  @for $i from 0 through 100 {
+    #{$i * 1%} {
+      border-image: linear-gradient(#{$i * 1.8deg + 90deg}, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+      border-image-slice: 1;
+    } 
+  }
 }
 
 @keyframes logoAnimation{

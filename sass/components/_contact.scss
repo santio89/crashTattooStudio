@@ -39,7 +39,8 @@
         opacity: 0;
         &:focus+label, &:checked+label{
             box-shadow: 0px .5rem 1rem -.5rem map-get($colores, tercero);
-            filter: none;
+            filter: grayscale(0%);
+            transition: filter 500ms;
         }
     }
 
@@ -58,8 +59,9 @@
         cursor: pointer;
         filter: grayscale(100%);
         transition: all 200ms, filter 500ms;
+        min-width: 140px;
 
-        &:hover{
+        &:hover, &:focus{
             box-shadow: 0px .5rem 1rem -.5rem map-get($colores, tercero);
             filter: grayscale(0%);
             transition: filter 500ms;
@@ -69,7 +71,7 @@
     &__nombre, &__email{
         margin-top: calc(.2vw + .2vh);
         margin-bottom: calc(.2vw + .2vh);
-        width: 80vw;
+        width: MAX(70vw, 280px);
         height: 10vh;
         font-weight: 400;
         font-size: 1.2em;
@@ -93,7 +95,7 @@
         outline: none;
         border-bottom: .1vw solid map-get($colores, primero);
         resize: none;
-        width: 80vw;
+        width: MAX(70vw, 280px);
         height: 15vh;
         font-size: 1em;
         outline: none; 
@@ -106,7 +108,7 @@
 
     &__file{
         font-size: .6em;
-        width: 80vw;
+        width: MAX(70vw, 280px);
         color: map-get($colores, primero);
         cursor: pointer;
 
@@ -116,8 +118,8 @@
     }
 
     &__reset{
-        width: 40vw;
-        min-width: 118px;
+        width: MAX(35vw, 140px);
+        min-width: 140px;
         padding: .2em;
         border-radius: calc(.5vw + .5vh);
         border: none;
@@ -146,7 +148,7 @@
     }
 
     &__enviar{
-        width: 40vw;
+        width: MAX(35vw, 140px);
         min-width: 118px;
         padding: .2em;
         border-radius: calc(.5vw + .5vh);
