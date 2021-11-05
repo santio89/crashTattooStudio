@@ -211,8 +211,91 @@ p, a, ul, h1, h2, table, label, input{
     }
 }
 
+.carouselGallery{
+    margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto;
+    &__imgContainer{
+        padding: 0;
+    }
 
+    &__img{
+        border: .5rem solid transparent;
+        border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+        border-image-slice: 1;
+        cursor: pointer;       
+        transition: 5ms;   
+        margin: auto;
+        width: 90%;
+        max-width: MIN(350px, 22vw);
+        min-width: 280px;
+        height: auto; 
+        box-sizing: content-box; 
+        
+        /* inicio antialiasing */
+        outline: 1px solid transparent;  
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        will-change: transform;
+        perspective: 1000;
+        /* fin antialiasing */
+        
+        transform: skew(-5deg);
+        
+        &:hover, &:focus{
+            border: .5rem solid; 
+            animation: borderAnimation 2000ms linear infinite;
+            box-shadow: none;    
+        }
+    }
 
+    &__prev{
+        left: -4%;
+        &__icon{
+            opacity: .5;
+            background-color: rgba(25, 29, 50, .5);
+        }
+    }
+
+    &__next{
+        right: -4%;
+
+        &__icon{
+            opacity: .5;
+            background-color: rgba(25, 29, 50, .5);
+        }
+    }
+
+    &__video{
+        margin: auto;
+        border-radius: 0 0 calc(.5vw + .5vh) calc(.5vw + .5vh);
+        width: 90%;
+        max-width: 350px;
+        min-width: MAX(280px, 90%);
+        height: auto;     
+        cursor: pointer;
+        /* box-shadow: 0px .5rem 1rem -.5rem map-get($colores, primero); */
+        
+        border: 0px solid transparent;
+        border-top: 1rem solid transparent;
+        border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+        border-image-slice: 1;    
+
+        &:hover, &:focus{
+            animation: borderAnimation 2000ms linear infinite;   
+        }
+
+     /*    &:nth-child(odd):hover{
+            box-shadow: 0px .5rem 1rem -.5rem map-get($colores, tercero);
+        }
+        
+        &:nth-child(even):hover{
+            box-shadow: 0px .5rem 1rem -.5rem map-get($colores, segundo);
+        } */
+    }  
+}
+
+.carouselGalleryB, .carouselGalleryC{
+    display:none;
+}
 
 
 
