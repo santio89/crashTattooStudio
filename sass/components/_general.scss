@@ -129,7 +129,7 @@ p, a, ul, h1, h2, table, label, input{
     background-size: 200% 200%;
     color: map-get($colores, cuarto);
     border-radius: calc(1vw + 1vh); 
-    padding: calc(.5rem + .5vw + .5vh);
+    padding: calc(.3rem + .3vw + .3vh);
     margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;   
     cursor: pointer;
     display: inline-block;
@@ -156,20 +156,19 @@ p, a, ul, h1, h2, table, label, input{
       }
     
     &:hover, &:focus{
-        padding-top: calc(.25rem + .25vw + .25vh);    
-        padding-bottom: calc(.25rem + .25vw + .25vh);    
+           
         animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 4000ms lineaGradienteAnimation linear infinite alternate-reverse, 3000ms buttonBorder infinite linear alternate;
         transition: 300ms;      
-        margin: calc(.25rem + 3.25vw + 3.25vh) auto calc(.25rem + 3.25vw + 3.25vh) auto;    
+         
         outline-offset: -.1rem;
     }
 
     &:active{
         animation: 2000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse, 2000ms buttonBorder infinite linear alternate;
-        padding-top: calc(.125rem + .125vw + .125vh);
-        padding-bottom: calc(.125rem + .125vw + .125vh);
+        padding-top: calc(.15rem + .15vw + .15vh);
+        padding-bottom: calc(.15rem + .15vw + .15vh);
         transition: 150ms;
-        margin: calc(.375rem + 3.375vw + 3.375vh) auto calc(.375rem + 3.375vw + 3.375vh) auto;  
+        margin: calc(3.15vw + 3.15vh + .15rem) auto calc(3.15vw + 3.15vh + .15rem) auto;  
     }
 }
 
