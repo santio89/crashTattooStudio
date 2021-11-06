@@ -30,12 +30,12 @@
         <a href="index.html" class="header__logo">CRASH</a>             
         <nav class="header__nav">      
             <ul class="nav__list">
-                <li><a href="index.html" class="nav__link">HOME</a></li>
+                <li><a href="index.html" class="nav__link nav__link--active">HOME</a></li>
                 <li><a href="studio.html" class="nav__link">STUDIO</a></li>
                 <li><a href="gallery.html" class="nav__link">GALLERY</a></li>               
-                <li><a href="faq.html" class="nav__link nav__link--active">FAQ</a></li>
+                <li><a href="faq.html" class="nav__link">FAQ</a></li>
                 <li class="nav__submenu">
-                    <a href="contact.html" class="nav__link">CONTACT</a><i class="bi bi-arrow-down nav__link__arrow" tabindex="1"></i>
+                    <a href="contact.html" class="nav__link">CONTACT</a><i class="bi bi-arrow-down nav__link__arrow"></i>
                     <ul class="nav__submenu__list">                      
                         <li class="escribinos"><a href="contact.html#contact" class="nav__link">ESCRIBINOS</a></li>
                         <li class="mapa"><a href="contact.html#ubicacion" class="nav__link"> MAPA</a></li>                         
@@ -45,6 +45,7 @@
             </ul>
         </nav>
     </header>
+
     <section class="section">
         <div class="container-fluid landing">
             <video autoplay loop muted class="landing__video">
@@ -64,7 +65,7 @@
         
         <div id="faq" class="container-fluid faq" data-aos="fade-up">
         
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
                 <h3 class="text__h3 text__h3--faq">¿DÓNDE ESTAMOS?</h3>
             </div>
             <div class="collapse container-fluid" id="faq1">
@@ -73,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
                 <h3 class="text__h3 text__h3--faq">¿QUÉ CUIDADOS DEBO TENER LUEGO DE HACERME UN TATTOO?</h3>
             </div>
             <div class="collapse container-fluid" id="faq2">
@@ -90,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
                 <h3 class="text__h3 text__h3--faq">¿QUÉ CUIDADOS DEBO TENER LUEGO DE HACERME UN PIERCING?</h3>
             </div>
             <div class="collapse container-fluid" id="faq3">
@@ -104,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
                 <h3 class="text__h3 text__h3--faq">¿TENGO QUE PEDIR TURNO?</h3>
             </div>
             <div class="collapse container-fluid" id="faq4">
@@ -113,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
                 <h3 class="text__h3 text__h3--faq">¿CÓMO DEBO HACER SI SOY MENOR DE 18 AÑOS?</h3>
             </div>
             <div class="collapse container-fluid" id="faq5">
@@ -122,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
                 <h3 class="text__h3 text__h3--faq">¿CUÁNTO SALE UN TATUAJE?</h3>
             </div>
             <div class="collapse container-fluid" id="faq6">
@@ -131,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
                 <h3 class="text__h3 text__h3--faq">¿CUÁNTO SALE UN PIERCING?</h3>
             </div>
             <div class="collapse container-fluid" id="faq7">
@@ -190,17 +191,17 @@
                 </div>
             </div>
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
                 <h3 class="text__h3 text__h3--faq">¿CÓMO PUEDO PAGAR?</h3>
             </div>
             <div class="collapse container-fluid" id="faq8">
                 <div class="card card-body faq__respuesta">
                     <p>Aceptamos todos los medios de pago.</p>
-                    <img width="650px" height="250px" alt="Medios de Pago" src="media/mediosdepago.jpg" class="faq__mediosPagoImg" class="img-fluid">
+                    <img width="650" height="250" alt="Medios de Pago" src="media/mediosdepago.jpg" class="img-fluid faq__mediosPagoImg">
                 </div>
             </div>         
 
-            <div class="container-fluid faq__pregunta" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+            <div class="container-fluid faq__pregunta" role="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
                 <h3 class="text__h3 text__h3--faq">¿PUEDO HACER UNA RESERVA?</h3>
             </div>
             <div class="collapse container-fluid" id="faq9">
@@ -257,7 +258,7 @@
 
                 <li class="footer__sitemap__li"><a class="footer__sitemap__link" href="contact.html">CONTACT<span aria-hidden="true" class="footer__sitemap__link__spanA">CONTACT</span><span aria-hidden="true" class="footer__sitemap__link__spanB">CONTACT</span></a></li>
 
-                <li class="footer__sitemap__li" aria-label="Whatsapp"><a class="footer__sitemap__whatsapp" href="https://wa.me/541143185724"  target="_blank" rel="noopener"><i class="fab fa-whatsapp-square"></i></a></li> 
+                <li class="footer__sitemap__li"><a aria-label="Whatsapp" class="footer__sitemap__whatsapp" href="https://wa.me/541143185724"  target="_blank" rel="noopener"><i class="fab fa-whatsapp-square"></i></a></li> 
             </ul>
         </div>
 
