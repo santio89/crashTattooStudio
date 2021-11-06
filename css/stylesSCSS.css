@@ -140,7 +140,7 @@ p, a, ul, h1, h2, table, label, input {
   border: none;
   outline: none;
   outline: .15rem solid white;
-  outline-offset: .5rem;
+  outline-offset: 1rem;
   position: relative;
   text-align: center;
   transition: 300ms;
