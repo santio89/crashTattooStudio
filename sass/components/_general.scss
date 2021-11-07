@@ -65,8 +65,9 @@ p, a, ul, h1, h2, table, label, input{
     height: calc(100vh - .5rem);
     position: absolute;
     top: 0;
-    background: linear-gradient(270deg, map-get($colores, primero),map-get($colores, tercero) , map-get($colores, primero));
-    opacity:  60%; 
+    background: linear-gradient(270deg, rgba(25, 29, 50, .6),rgba(248, 18, 152, .6) , rgba(61, 184, 255, .6));
+    opacity: 80%; 
+    background-size: 200%;
 }
 
 .landing_overlay__text{
