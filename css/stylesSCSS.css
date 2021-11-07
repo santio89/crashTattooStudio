@@ -441,6 +441,7 @@ p, a, ul, h1, h2, table, label, input {
   .artistas__tatuador {
     width: 80%;
     max-width: 350px;
+    min-width: 300px;
     height: auto;
     position: relative;
     margin: calc(1vw + 1vh) auto calc(2vw + 2vh) auto; }
@@ -514,8 +515,8 @@ p, a, ul, h1, h2, table, label, input {
   justify-items: center; }
   .gallery__img {
     width: 70%;
+    max-width: 350px;
     min-width: 300px;
-    max-width: 100%;
     height: auto;
     margin: 2vw;
     border-radius: calc(.2vw + .2vh);
