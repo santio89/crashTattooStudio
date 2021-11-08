@@ -559,9 +559,18 @@ p, a, ul, h1, h2, table, label, input {
       line-height: initial; }
   .faq__enviaDiseño {
     font-weight: bold;
-    color: #191D32; }
+    font-size: 1.2em;
+    color: #191D32;
+    background: linear-gradient(270deg, #3db8ff, #f81298);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: 300ms;
+    outline: none; }
     .faq__enviaDiseño:hover, .faq__enviaDiseño:focus {
-      color: #f81298; }
+      color: #f81298;
+      background-size: 100% 3px;
+      transition: 300ms; }
   .faq__mediosPagoImg {
     display: block;
     margin: 1vw auto 0 auto;

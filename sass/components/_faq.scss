@@ -26,10 +26,18 @@
 
     &__enviaDiseño{
         font-weight: bold;
+        font-size: 1.2em;
         color: map-get($colores, primero);
-
+        background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo));
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: 300ms;
+        outline: none;
         &:hover, &:focus{
             color: map-get($colores, segundo);
+            background-size: 100% 3px;
+            transition: 300ms;
          }
     }
 
