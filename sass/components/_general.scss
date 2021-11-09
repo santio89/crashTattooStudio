@@ -1,18 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul, li, a, h1, h2, p, body, header, section, footer, .container, .container-fluid, .row, .col{
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html{
     font-size: 100%;
     scroll-padding-top: 4rem;
     overflow-x: hidden;
+}
+
+ul, ol, li, a, h1, h2, h3, p, body, header, section, footer, .container, .container-fluid, .row, .col{
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -25,16 +25,19 @@ body{
     overflow-x: hidden;   
 }
 
-a, ul{
-    list-style: none;
+a{
     text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 a:hover{
     color: map-get($colores, cuarto);
 }
 
-p, a, ul, h1, h2, table, label, input{
+p, a, ul, h1, h2, h3, table, label, input{
     transition: font-size 200ms;
 }   
 
