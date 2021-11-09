@@ -35,7 +35,7 @@ ul {
 a:hover {
   color: #ffffff; }
 
-p, a, ul, h1, h2, h3, table, label, input {
+p, a, ul, ol, li, h1, h2, h3, table, label, input {
   transition: font-size 200ms; }
 
 .section {
@@ -254,6 +254,25 @@ p, a, ul, h1, h2, h3, table, label, input {
 .carouselGalleryB, .carouselGalleryC {
   display: none; }
 
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(248, 18, 152, 0.7), rgba(61, 184, 255, 0.7));
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f81298, #3db8ff); }
+
+/* fin Scrollbar */
 .header {
   display: flex;
   flex-flow: row wrap;

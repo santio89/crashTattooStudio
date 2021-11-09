@@ -37,7 +37,7 @@ a:hover{
     color: map-get($colores, cuarto);
 }
 
-p, a, ul, h1, h2, h3, table, label, input{
+p, a, ul, ol, li, h1, h2, h3, table, label, input{
     transition: font-size 200ms;
 }   
 
@@ -291,6 +291,27 @@ p, a, ul, h1, h2, h3, table, label, input{
 }
 
 
+/* Scrollbar */
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(248, 18, 152, .7), rgba(61, 184, 255, .7));
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(248, 18, 152, 1), rgba(61, 184, 255, 1));
+  }
 
-
+  /* fin Scrollbar */
