@@ -176,7 +176,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
 
 .gridBoard{
     width: 100vw;
-    height: 5vw;    
+    height: 5vw; 
+    min-height: 20px;   
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
