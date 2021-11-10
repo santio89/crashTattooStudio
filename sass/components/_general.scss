@@ -51,21 +51,19 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
 .landing{
     width: 100vw;
     height: calc(100vh - .5rem);
-    min-width: 100vw;
-    max-width: 100vh;
     overflow: hidden;
     position: relative;
 }
 
 .landing__video{
     width: 100%;   
-    height: calc(100vh - .5rem);
+    height: 100%;
     object-fit: cover;
 }
 
 .landing__overlay{
     width: 100%;
-    height: calc(100vh - .5rem);
+    height: 100%;
     position: absolute;
     top: 0;
     background: linear-gradient(270deg, rgba(25, 29, 50, .6),rgba(248, 18, 152, .6) , rgba(61, 184, 255, .6));
