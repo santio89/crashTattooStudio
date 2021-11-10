@@ -210,11 +210,13 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     }
 
    div::after{
-        @include font ($font-principal, 800, normal, calc(2rem + 2vw));
+        @include font ($font-principal, 800, normal, calc(1rem + 1vw));
         color: rgba(255, 255, 255, 0);  
         position: absolute;
         inset: 0;
         content: "CRASH TATTOO STUDIO";
+        text-align: center;
+        vertical-align: middle;
         width: 0vw;
         height: 100%;
         opacity: 1;
