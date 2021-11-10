@@ -175,27 +175,46 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 200ms;
+  position: relative; }
   .gridBoard__keyA {
-    background-color: #f81298;
+    background-color: rgba(248, 18, 152, 0.75);
     width: 100%;
     height: 100%;
-    opacity: .5;
-    transition: 500ms; }
+    opacity: 1;
+    transition: background-color 500ms; }
     .gridBoard__keyA:hover {
-      opacity: .75; }
-    .gridBoard__keyA:active {
-      opacity: 1; }
+      background-color: #f81298;
+      transition: background-color 500ms; }
   .gridBoard__keyB {
-    background-color: #191D32;
+    background-color: rgba(25, 29, 50, 0.75);
     width: 100%;
     height: 100%;
-    opacity: .5;
-    transition: 500ms; }
+    opacity: 1;
+    transition: background-color 500ms; }
     .gridBoard__keyB:hover {
-      opacity: .75; }
-    .gridBoard__keyB:active {
-      opacity: 1; }
+      background-color: #191d32;
+      transition: background-color 500ms; }
+  .gridBoard div::after {
+    font-family: "Rubik", verdana, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: calc(2rem + 2vw);
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    inset: 0;
+    content: "CRASH TATTOO STUDIO";
+    width: 0vw;
+    height: 100%;
+    opacity: 1;
+    transition: width 1000ms, color 500ms;
+    background: linear-gradient(270deg, rgba(248, 18, 152, 0.8), rgba(61, 184, 255, 0.8));
+    overflow: hidden; }
+  .gridBoard div:active::after {
+    color: white;
+    width: 100vw;
+    transition: width 1000ms, color 500ms; }
 
 .carouselGallery {
   margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto; }
