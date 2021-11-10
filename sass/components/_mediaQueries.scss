@@ -183,12 +183,20 @@
     .contactInfo__ul{
         font-size: calc(.6rem + .6vw + .6vh);
     }
+    .text{
+        &__h1{
+            font-size: calc(2.4rem + 6vw);
+        }
+        &__p{
+            font-size: calc(1rem + 2vw);
+        }
+    }
 }
 
 @media all and (max-width: 320px){  
     .text{
-        &_h1{
-            font-size: calc(2.4rem + 6vw);
+        &__h1{
+            font-size: calc(2rem + 6vw);
         }
         &__p{
             font-size: calc(.8rem + 2vw);

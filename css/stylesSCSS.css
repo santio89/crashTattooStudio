@@ -8,8 +8,7 @@
 html {
   font-size: 100%;
   scroll-padding-top: 4rem;
-  overflow-x: hidden;
-  line-height: 1.4; }
+  overflow-x: hidden; }
 
 ul, ol, li, a, h1, h2, h3, p, body, header, section, footer, .container, .container-fluid, .row, .col {
   margin: 0;
@@ -308,7 +307,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   z-index: 1;
   background-color: rgba(14, 16, 26, 0.5);
   height: 4rem;
-  border-bottom: 0.1rem solid white; }
+  border-bottom: 0.1rem solid white;
+  overflow: hidden; }
   .header__logo {
     font-family: "Rubik", verdana, sans-serif;
     font-weight: 900;
@@ -1270,11 +1270,15 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   .faq__mediosPagoImg, .faq__piercingTable {
     min-width: 100%; }
   .contactInfo__ul {
-    font-size: calc(.6rem + .6vw + .6vh); } }
+    font-size: calc(.6rem + .6vw + .6vh); }
+  .text__h1 {
+    font-size: calc(2.4rem + 6vw); }
+  .text__p {
+    font-size: calc(1rem + 2vw); } }
 
 @media all and (max-width: 320px) {
-  .text_h1 {
-    font-size: calc(2.4rem + 6vw); }
+  .text__h1 {
+    font-size: calc(2rem + 6vw); }
   .text__p {
     font-size: calc(.8rem + 2vw); }
   .footer__list__link {
