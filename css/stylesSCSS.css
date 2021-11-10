@@ -8,7 +8,8 @@
 html {
   font-size: 100%;
   scroll-padding-top: 4rem;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  line-height: 1.4; }
 
 ul, ol, li, a, h1, h2, h3, p, body, header, section, footer, .container, .container-fluid, .row, .col {
   margin: 0;
