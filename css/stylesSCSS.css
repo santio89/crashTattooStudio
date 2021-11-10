@@ -307,8 +307,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   z-index: 1;
   background-color: rgba(14, 16, 26, 0.5);
   height: 4rem;
-  border-bottom: 0.1rem solid white;
-  overflow: hidden; }
+  border-bottom: 0.1rem solid white; }
   .header__logo {
     font-family: "Rubik", verdana, sans-serif;
     font-weight: 900;

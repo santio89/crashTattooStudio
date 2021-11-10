@@ -8,7 +8,6 @@
     background-color: rgba(14, 16, 26, 0.5);
     height: 4rem;
     border-bottom: .1rem solid map-get($colores, cuarto);
-    overflow: hidden;
     
     &__logo{    
         @include font ($font-principal, 900, italic, 3.5rem);        
@@ -50,6 +49,7 @@
         @include font ($font-principal, 800, normal, 2.2rem);
         text-shadow: 0 0 .1rem map-get($colores, primero);  
     }
+    
     &__link{
         color: map-get($colores, cuarto);    
         margin: 0 .5rem;
