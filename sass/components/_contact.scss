@@ -33,9 +33,6 @@
     color: map-get($colores, primero);
     margin: calc(2vw + 2vh) auto calc(4vw + 4vh) auto; 
 
-    &__motivo{
-        display: inline-block;
-    }
     &__motivoInput{
         width: 0;
         height: 0;
