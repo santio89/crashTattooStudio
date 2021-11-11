@@ -79,7 +79,6 @@
         border:none;
         outline: none;
         border-bottom: .1vw solid map-get($colores, primero);  
-        outline: none;
         font-style: italic;
 
         &::placeholder{
@@ -98,7 +97,6 @@
         width: MAX(70vw, 280px);
         height: 15vh;
         font-size: 1em;
-        outline: none; 
 
         &::placeholder{
             color: rgba(25, 29, 50, .5);
