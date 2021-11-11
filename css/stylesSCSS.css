@@ -8,7 +8,8 @@
 html {
   font-size: 100%;
   scroll-padding-top: 4rem;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 ul, ol, li, a, h1, h2, h3, p, body, header, section, footer, .container, .container-fluid, .row, .col {
   margin: 0;
@@ -712,7 +713,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     border: none;
     outline: none;
     border-bottom: 0.1vw solid #191d32;
-    outline: none;
     font-style: italic; }
     .contactForm__nombre::placeholder, .contactForm__email::placeholder {
       color: rgba(25, 29, 50, 0.5);
@@ -726,8 +726,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     resize: none;
     width: MAX(70vw, 280px);
     height: 15vh;
-    font-size: 1em;
-    outline: none; }
+    font-size: 1em; }
     .contactForm__textArea::placeholder {
       color: rgba(25, 29, 50, 0.5);
       font-style: italic; }
