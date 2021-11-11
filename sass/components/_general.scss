@@ -158,10 +158,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
       }
     
     &:hover, &:focus{
-           
         animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 4000ms lineaGradienteAnimation linear infinite alternate-reverse, 3000ms buttonBorder infinite linear alternate;
         transition: 300ms;      
-         
         outline-offset: -.1rem;
     }
 
