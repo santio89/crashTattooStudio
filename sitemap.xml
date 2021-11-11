@@ -3,27 +3,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
-      <loc>http://127.0.0.1:5501/index.html/</loc>
+      <loc>https://crashtattoostudio.netlify.app/index.html/</loc>
    </url>
 
    <url>
-      <loc>http://127.0.0.1:5501/studio.html/</loc>
+      <loc>https://crashtattoostudio.netlify.app/studio.html/</loc>
    </url>
 
    <url>
-      <loc>http://127.0.0.1:5501/gallery.html/</loc>
+      <loc>https://crashtattoostudio.netlify.app/gallery.html/</loc>
    </url>
 
    <url>
-      <loc>http://127.0.0.1:5501/faq.html/</loc>
+      <loc>https://crashtattoostudio.netlify.app/faq.html/</loc>
    </url>
 
    <url>
-      <loc>http://127.0.0.1:5501/contact.html/</loc>
+      <loc>https://crashtattoostudio.netlify.app/contact.html/</loc>
    </url>
    
    <url>
-      <loc>http://127.0.0.1:5501/error404.html/</loc>
+      <loc>https://crashtattoostudio.netlify.app/error404.html/</loc>
    </url>
 
 </urlset> 
