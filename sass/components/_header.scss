@@ -5,7 +5,7 @@
     position: fixed; 
     top: 0;
     z-index: 1;
-    background-color: rgba(14, 16, 26, 0.5);
+    background-color: rgba(14, 16, 26, .8);
     height: 4rem;
     border-bottom: .1rem solid map-get($colores, cuarto);
     
