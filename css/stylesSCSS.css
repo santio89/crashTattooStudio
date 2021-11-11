@@ -673,6 +673,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   font-size: calc(1rem + .4vw + .4vh);
   color: #191d32;
   margin: calc(2vw + 2vh) auto calc(4vw + 4vh) auto; }
+  .contactForm__motivo {
+    display: inline-block; }
   .contactForm__motivoInput {
     width: 0;
     height: 0;
