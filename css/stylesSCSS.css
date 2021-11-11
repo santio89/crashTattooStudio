@@ -1164,7 +1164,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   .carouselGalleryB {
     display: block; } }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1024px), all and (pointer: coarse) {
   .header__logo {
     margin-right: .5rem;
     margin-left: auto; }
