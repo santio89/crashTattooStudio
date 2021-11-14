@@ -367,7 +367,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     text-align: right;
     width: 100%;
     font-size: .7em;
-    background-color: rgba(25, 29, 50, 0.9);
+    background-color: rgba(14, 16, 26, 0.8);
     border-radius: 0 0 0 calc(.4vw + .4vh);
     text-shadow: 0 0 0.2rem #191d32;
     display: none; }
