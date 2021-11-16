@@ -78,13 +78,14 @@
             line-height: 2rem;
             font-size: 1.8rem;  
             text-shadow: 0 0 .4vw rgba(14, 16, 26, .5);    
-            background-color: rgba(25, 29, 50, .9);       
+            background-color: rgba(14, 16, 26, .9);       
         }
         &__submenu{
             &__list{
                 top: 100%;
                 width: 100%; 
                 line-height: calc(1.5rem);
+                background-color: rgba(14, 16, 26, .9);  
             }
             &:hover &__list{
                 display: grid;

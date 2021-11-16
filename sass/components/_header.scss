@@ -4,11 +4,13 @@
     width: 100%;
     position: fixed; 
     top: 0;
-    z-index: 1;
+    left: 0;
     background-color: rgba(14, 16, 26, .8);
     height: 4rem;
     border-bottom: .1rem solid map-get($colores, cuarto);
-    
+    backdrop-filter: blur(2px);
+    z-index: 1;
+
     &__logo{    
         @include font ($font-principal, 900, italic, 3.5rem);        
         margin-right: auto;
@@ -48,6 +50,7 @@
         @include flexbox (row wrap, space-evenly, center);
         @include font ($font-principal, 800, normal, 2.2rem);
         text-shadow: 0 0 .1rem map-get($colores, primero);  
+        
     }
     
     &__link{
@@ -74,7 +77,7 @@
             text-align: right;
             width: 100%;
             font-size: .7em;
-            background-color: rgba(14, 16, 26, .8);
+            background-color: rgba(14, 16, 26, .9);
             border-radius: 0 0 0 calc(.4vw + .4vh);
             text-shadow: 0 0 .2rem map-get($colores, primero); 
             display: none; 
