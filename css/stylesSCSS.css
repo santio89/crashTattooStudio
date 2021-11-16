@@ -366,8 +366,10 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
 .nav__submenu {
   position: relative; }
   .nav__submenu__list {
+    backdrop-filter: blur(20px);
     position: absolute;
     top: 2.5rem;
+    right: 0;
     text-align: right;
     width: 100%;
     font-size: .7em;
@@ -1209,9 +1211,11 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     background-color: rgba(14, 16, 26, 0.9); }
   .nav__submenu__list {
     top: 100%;
+    left: 0;
     width: 100%;
     line-height: calc(1.5rem);
-    background-color: rgba(14, 16, 26, 0.9); }
+    background-color: rgba(14, 16, 26, 0.9);
+    border-radius: 0; }
   .nav__submenu:hover .nav__submenu__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
