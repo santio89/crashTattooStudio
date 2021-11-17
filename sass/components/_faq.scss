@@ -1,3 +1,4 @@
+/* INICIO FAQ */
 .faq{
     background-color: map-get($colores, fondo);
     margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;
@@ -66,9 +67,8 @@
             border-bottom: .1em solid map-get($colores, fondo);
         }
     }
-    
-  
 }
+/* FIN FAQ */
 
 
 

@@ -1,3 +1,4 @@
+/* INICIO HEADER (but nav)*/
 .header{ 
     @include flexbox (row wrap, flex-end, flex-end);
     color: map-get($colores, cuarto);
@@ -43,7 +44,9 @@
         display: none;
     }
 };
+/* FIN HEADER (but nav) */
 
+/* INICIO NAV */
 .nav{
     &__list{
         @include flexbox (row wrap, space-evenly, center);
@@ -103,4 +106,5 @@
         }    
     }
 }
+/* FIN NAV */
 

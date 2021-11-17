@@ -129,6 +129,77 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     animation: lineaGradienteAnimation 20000ms linear infinite;
 }
 
+/* INICIO CAROUSEL */
+.carouselGallery{
+    margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto;
+    &__imgContainer{
+        padding: 0;
+    }
+
+    &__img{
+        border: .5rem solid transparent;
+        border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+        border-image-slice: 1;     
+        transition: 5ms;   
+        margin: auto;
+        width: 90%;
+        max-width: 350px;
+        min-width: 280px;
+        height: auto; 
+        box-sizing: content-box; 
+        
+        /* inicio antialiasing */
+        outline: 1px solid transparent;  
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        will-change: transform;
+        perspective: 1000;
+        /* fin antialiasing */
+        transform: skew(-5deg);
+        animation: borderAnimation 2000ms linear infinite;
+    }
+
+    &__prev{
+        left: -4%;
+        &__icon{
+            opacity: .5;
+            background-color: rgba(25, 29, 50, .5);
+        }
+    }
+
+    &__next{
+        right: -4%;
+
+        &__icon{
+            opacity: .5;
+            background-color: rgba(25, 29, 50, .5);
+        }
+    }
+
+    &__video{
+        margin: auto;
+        border-radius: 0 0 calc(.5vw + .5vh) calc(.5vw + .5vh);
+        width: 90%;
+        max-width: 350px;
+        min-width: MAX(280px, 90%);
+        height: auto;     
+        cursor: pointer;
+        border: 0px solid transparent;
+        border-top: 1rem solid transparent;
+        border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
+        border-image-slice: 1;    
+        
+        &:hover, &:focus, &:active{
+            animation: borderAnimation 2000ms linear infinite;   
+        }
+    }  
+}
+
+.carouselGalleryB, .carouselGalleryC{
+    display:none;
+}
+/* FIN CAROUSEL */
+
 
 /* button reserva */
 .bigButton{
@@ -178,6 +249,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     }
 }
 
+/* INICIO GRIDBOARD/HIDDEN MESSAGE */
 .gridBoard{
     width: 100vw;
     height: 5vw; 
@@ -236,84 +308,10 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
         transition: left 1000ms;
     }
 }
-
-.carouselGallery{
-    margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto;
-    &__imgContainer{
-        padding: 0;
-    }
-
-    &__img{
-        border: .5rem solid transparent;
-        border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
-        border-image-slice: 1;     
-        transition: 5ms;   
-        margin: auto;
-        width: 90%;
-        max-width: 350px;
-        min-width: 280px;
-        height: auto; 
-        box-sizing: content-box; 
-        
-        /* inicio antialiasing */
-        outline: 1px solid transparent;  
-        backface-visibility: hidden;
-        transform: translateZ(0);
-        will-change: transform;
-        perspective: 1000;
-        /* fin antialiasing */
-        
-        transform: skew(-5deg);
-        
-        &:hover, &:focus{
-            border: .5rem solid; 
-            animation: borderAnimation 2000ms linear infinite;
-            box-shadow: none;    
-        }
-    }
-
-    &__prev{
-        left: -4%;
-        &__icon{
-            opacity: .5;
-            background-color: rgba(25, 29, 50, .5);
-        }
-    }
-
-    &__next{
-        right: -4%;
-
-        &__icon{
-            opacity: .5;
-            background-color: rgba(25, 29, 50, .5);
-        }
-    }
-
-    &__video{
-        margin: auto;
-        border-radius: 0 0 calc(.5vw + .5vh) calc(.5vw + .5vh);
-        width: 90%;
-        max-width: 350px;
-        min-width: MAX(280px, 90%);
-        height: auto;     
-        cursor: pointer;
-        border: 0px solid transparent;
-        border-top: 1rem solid transparent;
-        border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
-        border-image-slice: 1;    
-
-        &:hover, &:focus{
-            animation: borderAnimation 2000ms linear infinite;   
-        }
-    }  
-}
-
-.carouselGalleryB, .carouselGalleryC{
-    display:none;
-}
+/* FIN GRIDBOARD/HIDDEN MESSAGE */
 
 
-/* Scrollbar */
+/* INICIO SCROLLBAR */
 
 /* width */
 ::-webkit-scrollbar {
@@ -336,4 +334,4 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     background: linear-gradient(180deg, rgba(248, 18, 152, 1), rgba(61, 184, 255, 1));
   }
 
-  /* fin Scrollbar */
+  /* FIN SCROLLBAR */

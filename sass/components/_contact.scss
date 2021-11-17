@@ -1,3 +1,4 @@
+/* INICIO INFO CONTACTO */
 .contactInfo{   
     @include flexbox (row wrap, center, center);
     flex-shrink: 0;
@@ -24,9 +25,9 @@
         margin: 2.5vw;
     }
 }
+/* FIN INFO CONTACTO */
 
 /* INICIO FORM */
-
 .contactForm{
     @include flexbox (column wrap, center, center);
     @include font ($font-principal, 800, italic, map-get($font-size, form));      
