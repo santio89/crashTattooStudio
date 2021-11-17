@@ -246,8 +246,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     &__img{
         border: .5rem solid transparent;
         border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
-        border-image-slice: 1;
-        cursor: pointer;       
+        border-image-slice: 1;     
         transition: 5ms;   
         margin: auto;
         width: 90%;

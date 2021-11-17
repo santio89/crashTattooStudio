@@ -47,6 +47,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   text-align: center;
   align-content: center; }
 
+/* overlay hero */
 .landing {
   width: 100vw;
   height: calc(100vh - .5rem);
@@ -128,6 +129,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   background-size: 500% 500%;
   animation: lineaGradienteAnimation 20000ms linear infinite; }
 
+/* button reserva */
 .bigButton {
   font-family: "Rubik", verdana, sans-serif;
   font-weight: 900;
@@ -230,7 +232,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     border: .5rem solid transparent;
     border-image: linear-gradient(270deg, #3db8ff, #f81298, #3db8ff);
     border-image-slice: 1;
-    cursor: pointer;
     transition: 5ms;
     margin: auto;
     width: 90%;

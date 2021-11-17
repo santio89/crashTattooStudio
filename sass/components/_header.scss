@@ -86,7 +86,6 @@
         &:hover &__list{
             @include flexbox (column wrap, flex-start, flex-end);
         }
-
     }
 
     &__whatsapp{  
