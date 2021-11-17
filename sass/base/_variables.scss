@@ -13,14 +13,13 @@ $font-size: (
 );
 
 $colores: (
-    primero: rgb(25, 29, 50),
-    segundo: rgb(248, 18, 152),
-    tercero: rgb(61, 184, 255),
-    cuarto: rgb(255, 255, 255),
-    quinto: rgb(14, 16, 26),
-    fondo: rgb(255, 255, 255),
+    primero: rgb(25, 29, 50),    //*textos*//
+    segundo: rgb(248, 18, 152),    //*theme 1*//
+    tercero: rgb(61, 184, 255),    //*theme 2*//  
+    cuarto: rgb(255, 255, 255),    //*links nav*// 
+    quinto: rgb(14, 16, 26),    //*footer y nav (con opacidad)*//
+    fondo: rgb(255, 255, 255),    //*fondo general*//
 );
-
 
 @mixin flexbox ($flow, $justify, $align){
     display: flex;

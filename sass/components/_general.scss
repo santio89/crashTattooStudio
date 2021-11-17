@@ -49,6 +49,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
 }
 
 
+/* overlay hero */
 .landing{
     width: 100vw;
     height: calc(100vh - .5rem);
@@ -120,7 +121,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     }
 }
 
-
 .lineaGradiente{
     width: 100%;
     height: .5rem;
@@ -129,6 +129,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     animation: lineaGradienteAnimation 20000ms linear infinite;
 }
 
+
+/* button reserva */
 .bigButton{
     @include font($font-principal, 900, normal, calc(1.2rem + 1.8vw + 1.8vh)); 
     background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
