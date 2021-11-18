@@ -764,7 +764,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     .contactForm__file:focus {
       outline: 1px solid #191d32; }
   .contactForm__recaptcha {
-    cursor: pointer; }
+    align-self: center; }
   .contactForm__reset {
     width: MAX(35vw, 140px);
     min-width: 140px;
