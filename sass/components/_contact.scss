@@ -119,6 +119,10 @@
         }
     }
 
+    &__recaptcha{
+        cursor: pointer;
+    }
+
     &__reset{
         width: MAX(35vw, 140px);
         min-width: 140px;
