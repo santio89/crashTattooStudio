@@ -244,7 +244,7 @@
 @media all and (orientation: portrait) and (max-width: 1024px), all and (pointer: coarse) and (max-width: 1024px){
     .gallery__img{
         &:active, &:focus, &:hover{
-            transform: scale(1.15);
+            transform: scale(1.12);
         } 
     }
 }

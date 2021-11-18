@@ -200,7 +200,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   border: none;
   outline: none;
   outline: .15rem solid white;
-  outline-offset: 1rem;
+  outline-offset: .8rem;
   position: relative;
   text-align: center;
   transition: 300ms;
@@ -1328,4 +1328,4 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
 /*studio/gallery img en mobile-> menor transform:scale*/
 @media all and (orientation: portrait) and (max-width: 1024px), all and (pointer: coarse) and (max-width: 1024px) {
   .gallery__img:active, .gallery__img:focus, .gallery__img:hover {
-    transform: scale(1.15); } }
+    transform: scale(1.12); } }
