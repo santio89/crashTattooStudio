@@ -112,7 +112,7 @@
         width: MAX(70vw, 280px);
         color: map-get($colores, primero);
         cursor: pointer;
-        margin-bottom: calc(2vw + 2vh);
+        margin-bottom: calc(1vw + 1vh);
 
         &:focus{
             outline: 1px solid map-get($colores, primero);
@@ -130,7 +130,7 @@
         font-weight: bold;
         color: white;
         font-size: 1.4em;
-        margin: calc(2vw + 2vh) auto 0 auto;
+        margin: calc(1vw + 1vh) auto 0 auto;
         background-color: map-get($colores, primero);
         cursor: pointer;
         font-family: inherit;
@@ -160,7 +160,7 @@
         font-weight: bold;
         color: map-get($colores, cuarto);
         font-size: 1.4em;
-        margin: calc(2vw + 2vh) auto 0 auto;
+        margin: calc(1vw + 1vh) auto 0 auto;
         background-color: map-get($colores, primero);
         cursor: pointer;
         font-family: inherit;
