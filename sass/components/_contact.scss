@@ -112,6 +112,8 @@
         width: MAX(70vw, 280px);
         color: map-get($colores, primero);
         cursor: pointer;
+        margin-top: calc(.2vw + .2vh);
+        margin-bottom: calc(.2vw + .2vh);
 
         &:focus{
             outline: 1px solid map-get($colores, primero);
