@@ -242,9 +242,7 @@
 
  /*studio/gallery img en mobile-> menor transform:scale*/
 @media all and (orientation: portrait) and (max-width: 1024px), all and (pointer: coarse) and (max-width: 1024px){
-    .gallery__img{
-        &:active, &:focus, &:hover{
-            transform: scale(1.12);
-        } 
+    .gallery__img__active{
+        transform: scale(1.12);
     }
 }
