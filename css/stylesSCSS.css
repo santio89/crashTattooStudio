@@ -317,7 +317,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   height: 4rem;
   border-bottom: 0.1rem solid white;
   backdrop-filter: blur(2px);
-  z-index: 9; }
+  z-index: 10; }
   .header__logo {
     font-family: "Rubik", verdana, sans-serif;
     font-weight: 900;

@@ -10,7 +10,7 @@
     height: 4rem;
     border-bottom: .1rem solid map-get($colores, cuarto);
     backdrop-filter: blur(2px);
-    z-index: 9;
+    z-index: 10;
 
     &__logo{    
         @include font ($font-principal, 900, italic, 3.5rem);        
