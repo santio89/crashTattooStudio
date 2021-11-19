@@ -588,12 +588,10 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     transition: 400ms; }
     .gallery__img__active {
       transform: scale(1.4); }
-    .gallery__img:hover, .gallery__img:focus {
+    .gallery__img:not(.gallery__img__active):hover, .gallery__img:not(.gallery__img__active):focus {
       transition: 400ms;
       box-shadow: -0.1em 0.2em 0 0 #3db8ff, 0.1em 0.3em 0 0 #f81298, 0.25em -0.125em 0 0 #009bca, -0.25em -0.25em 0 0 #c212f8;
       transform: scale(1.2); }
-    .gallery__img__nohover {
-      pointer-events: none; }
 
 /* FIN GALERIA - GALLERY */
 /* INICIO FAQ */
