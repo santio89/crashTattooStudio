@@ -1,23 +1,16 @@
-function enlarge(){
-    var img = document.getElementById("test");
+var img = document.getElementsByClassName("gallery__img");
 
-    if (img.className == "gallery__img gallery__img__active"){
-        img.className = "gallery__img";
-    } else{
-        img.className = "gallery__img gallery__img__active";
-    }
-}
+for (let i=0; i < img.length; i++) {
+    let img = document.getElementsByClassName("gallery__img")[i];
 
-var img = document.getElementsByClassName(gallery__img);
-		
-for (var i=0; i < img.length; i++) {
-    img[i].onclick = function(){
+    img.addEventListener("click", function(){
 
-        if (img[i].className == "gallery__img gallery__img__active"){
-            img[i].className = "gallery__img";
+        if (img.className == "gallery__img gallery__img--active"){
+            img.className = "gallery__img";
         } else{
-            img[i].className = "gallery__img gallery__img__active";
+            img.className = "gallery__img gallery__img--active";
         }
-        
-    }
+
+    })
+ 
 };
