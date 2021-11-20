@@ -240,7 +240,7 @@
     } 
 }
 
- /*studio/gallery img en mobile-> menor transform:scale*/
+ /*studio/gallery img mobile -> menor transform:scale*/
 @media all and (orientation: portrait) and (max-width: 1024px){
     .gallery__img{
         &--active{
@@ -252,6 +252,7 @@
         }
     }
 }
+
 @media all and (pointer: coarse){
     .gallery__img{
         &--active{
@@ -266,3 +267,4 @@
         
     }
 }
+/* fin studio/gallery img mobile */

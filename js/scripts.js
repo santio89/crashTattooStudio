@@ -1,3 +1,4 @@
+/* studio/gallery img -> transform:scale on click*/
 var img = document.getElementsByClassName("gallery__img");
 
 for (let i=0; i < img.length; i++) {
