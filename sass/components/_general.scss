@@ -55,7 +55,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     height: calc(100vh - .5rem);
     overflow: hidden;
     position: relative;
-    z-index: 8;
 }
 
 .landing__video{
@@ -102,7 +101,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
         padding-bottom: calc(2vw + 2vh);
         margin: 0;
         text-shadow: 0 0 .4rem map-get($colores, segundo);
-        z-index: 9;
     }
     
     &__h3{
@@ -129,7 +127,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
     background-size: 500% 500%;
     animation: lineaGradienteAnimation 20000ms linear infinite;
-    z-index: 9;
 }
 
 /* INICIO CAROUSEL */
@@ -216,14 +213,13 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     cursor: pointer;
     display: inline-block;
     border: none;
-    outline: none;
     outline: .15rem solid white;
     outline-offset: .8rem;
     position: relative;
     text-align: center;
     transition: 300ms;
     max-width: 90%;
-
+    
     &::before {
         content: '';
         position: absolute;
