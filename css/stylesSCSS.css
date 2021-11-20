@@ -561,7 +561,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   justify-content: center;
   align-content: center;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  z-index: 1; }
 
 /* FIN GALERIA - STUDIO */
 /* INICIO GALERIA - GALLERY */
