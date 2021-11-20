@@ -15,3 +15,4 @@ for (let i=0; i < img.length; i++) {
     })
  
 };
+/* fin studio/gallery img -> transform:scale on click*/
