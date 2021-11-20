@@ -1332,7 +1332,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   .text__p {
     font-size: calc(.8rem + 1vw); } }
 
-/*studio/gallery img en mobile-> menor transform:scale*/
+/*studio/gallery img mobile -> menor transform:scale*/
 @media all and (orientation: portrait) and (max-width: 1024px) {
   .gallery__img--active {
     transform: scale(1.18); }
@@ -1346,3 +1346,5 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   .gallery__img:active, .gallery__img:focus, .gallery__img:hover {
     transform: scale(1.12);
     box-shadow: -0.1em 0.2em 0 0 #3db8ff, 0.1em 0.3em 0 0 #f81298, 0.25em -0.125em 0 0 #009bca, -0.25em -0.25em 0 0 #c212f8; } }
+
+/* fin studio/gallery img mobile -> menor transform:scale */
