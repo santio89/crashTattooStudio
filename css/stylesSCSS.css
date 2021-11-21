@@ -740,7 +740,15 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     outline: none;
     border-bottom: 0.1vw solid #191d32;
     font-style: italic;
-    border-radius: calc(.5vw + .5vh) calc(.5vw + .5vh) 0 0; }
+    border-radius: calc(.5vw + .5vh) calc(.5vw + .5vh) 0 0;
+    background: linear-gradient(270deg, #3db8ff, #f81298);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms; }
+    .contactForm__nombre:active, .contactForm__nombre:focus, .contactForm__nombre:valid, .contactForm__email:active, .contactForm__email:focus, .contactForm__email:valid {
+      background-size: 100% 3px;
+      transition: 300ms; }
     .contactForm__nombre::placeholder, .contactForm__email::placeholder {
       color: rgba(25, 29, 50, 0.5);
       font-style: italic; }
@@ -754,7 +762,15 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     width: MAX(70vw, 280px);
     height: 15vh;
     font-size: 1em;
-    border-radius: calc(.5vw + .5vh) calc(.5vw + .5vh) 0 0; }
+    border-radius: calc(.5vw + .5vh) calc(.5vw + .5vh) 0 0;
+    background: linear-gradient(270deg, #3db8ff, #f81298);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms; }
+    .contactForm__textArea:active, .contactForm__textArea:focus, .contactForm__textArea:valid {
+      background-size: 100% 3px;
+      transition: 300ms; }
     .contactForm__textArea::placeholder {
       color: rgba(25, 29, 50, 0.5);
       font-style: italic; }
