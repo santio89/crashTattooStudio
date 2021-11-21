@@ -13,6 +13,22 @@ for (let i=0; i < img.length; i++) {
         }
 
     })
- 
 };
+
+/* volver al tamaño inicial clickeando fuera del area de imagen */
+window.onclick = function(e) {
+    if (!e.target.matches('.gallery__img')) {
+        for (let i=0; i < img.length; i++) {
+            let img = document.getElementsByClassName("gallery__img")[i];
+        
+            if (img.classList.contains('gallery__img--active')) {
+                img.classList.remove('gallery__img--active');
+              }
+         
+        };
+    }
+  }
+/* fin volver al tamaño inicial */
+
 /* fin studio/gallery img -> transform:scale on click*/
+
