@@ -40,6 +40,8 @@
         cursor: pointer;
         color: white;
         text-shadow: 0 0 .2rem map-get($colores, segundo);
+        transform: rotate(0deg);
+        transition: transform 200ms;
     }
     .nav__link__arrow{
         display: inline; 
@@ -65,6 +67,8 @@
     .header__burgerMenu:checked + .header__burgerIcon{
         color: map-get($colores, segundo);
         text-shadow: 0 0 .4rem map-get($colores, segundo);
+        transform: rotate(90deg);
+        transition: transform 200ms;
     } 
     .header__burgerMenu:checked ~ .header__nav {
         height: 220px;

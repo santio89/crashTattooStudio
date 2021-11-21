@@ -1220,7 +1220,9 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     font-size: 3.2rem;
     cursor: pointer;
     color: white;
-    text-shadow: 0 0 0.2rem #f81298; }
+    text-shadow: 0 0 0.2rem #f81298;
+    transform: rotate(0deg);
+    transition: transform 200ms; }
   .nav__link__arrow {
     display: inline;
     font-size: 1.2rem; }
@@ -1239,7 +1241,9 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     text-shadow: 0 0 0.4rem #f81298; }
   .header__burgerMenu:checked + .header__burgerIcon {
     color: #f81298;
-    text-shadow: 0 0 0.4rem #f81298; }
+    text-shadow: 0 0 0.4rem #f81298;
+    transform: rotate(90deg);
+    transition: transform 200ms; }
   .header__burgerMenu:checked ~ .header__nav {
     height: 220px;
     transition: height 200ms; }
