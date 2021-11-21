@@ -594,7 +594,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     .gallery__img:not(.gallery__img--active):hover, .gallery__img:not(.gallery__img--active):focus {
       transition: 400ms;
       box-shadow: -0.1em 0.2em 0 0 #3db8ff, 0.1em 0.3em 0 0 #f81298, 0.25em -0.125em 0 0 #009bca, -0.25em -0.25em 0 0 #c212f8;
-      transform: scale(1.2); }
+      transform: scale(1.2);
+      z-index: 1; }
 
 /* FIN GALERIA - GALLERY */
 /* INICIO FAQ */
