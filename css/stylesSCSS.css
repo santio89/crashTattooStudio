@@ -725,7 +725,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     cursor: pointer;
     filter: grayscale(100%);
     transition: all 200ms, filter 500ms;
-    min-width: 140px; }
+    min-width: 180px; }
     .contactForm__motivoLabel:hover, .contactForm__motivoLabel:focus {
       box-shadow: 0px 0.5rem 1rem -0.5rem #3db8ff;
       filter: grayscale(0%);
