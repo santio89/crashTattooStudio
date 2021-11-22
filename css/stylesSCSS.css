@@ -672,6 +672,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   .contactInfo__gmap {
     width: 45vw;
     max-width: 80vw;
+    max-height: 44vh;
     height: 50vh;
     border: 0.1rem solid #191d32;
     border-radius: calc(.5vw + .5vh); }
@@ -1289,6 +1290,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
 @media all and (max-width: 768px) {
   .contactInfo__gmap, .contactInfo__ul {
     width: 80vw; }
+  .contactInfo__gmap {
+    max-height: 34vh; }
   .text__h1 {
     font-size: calc(2.8rem + 6vw); }
   .text__h2 {

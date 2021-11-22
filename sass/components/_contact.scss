@@ -7,6 +7,7 @@
     &__gmap{ 
         width: 45vw;
         max-width: 80vw;
+        max-height: 44vh;
         height: 50vh;
         border:.1rem solid map-get($colores, primero);
         border-radius: calc(.5vw + .5vh);   
