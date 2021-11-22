@@ -682,8 +682,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     color: #191d32;
     font-family: "Rubik", verdana, sans-serif;
     font-weight: 400;
-    font-style: italic;
-    font-size: calc(.8rem + .8vw + .8vh);
+    font-style: normal;
+    font-size: calc(1rem + .8vw + .8vh);
     line-height: 1.5; }
   .contactInfo__li {
     margin: 2.5vw; }
@@ -711,7 +711,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
       transition: filter 500ms; }
   .contactForm__motivoLabel {
     font-size: calc(1.2em + 1vw);
-    font-style: italic;
+    font-style: normal;
     padding: calc(.4vw + .4vh);
     margin: 0 1vw calc(1vw + 1vh) 1vw;
     outline: none;
