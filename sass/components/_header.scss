@@ -1,6 +1,7 @@
 /* INICIO HEADER (but nav)*/
 .header{ 
     @include flexbox (row wrap, flex-end, flex-end);
+    align-items: center;
     color: map-get($colores, cuarto);
     width: 100%;
     position: fixed; 
@@ -20,14 +21,17 @@
         text-shadow: 0 0 .4rem map-get($colores, segundo);
         transition: 250ms;
         outline: none;
+
         &:hover, &:focus{
             color: map-get($colores, segundo);
             text-shadow: 0 0 .8rem map-get($colores, segundo);
             animation: 1000ms logoAnimation linear infinite alternate-reverse;
         }
+
         &:active{
             animation:500ms logoAnimation linear infinite alternate-reverse;
         }
+
         &--404{
             font-size: calc(2rem + 4vw);
             line-height: 2;
@@ -48,6 +52,8 @@
 
 /* INICIO NAV */
 .nav{
+    align-self: end;
+    
     &__list{
         @include flexbox (row wrap, space-evenly, center);
         @include font ($font-principal, 800, normal, 2.2rem);
