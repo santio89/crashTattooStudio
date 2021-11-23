@@ -18,8 +18,12 @@
         width: 45vw; 
         max-width: 80vw;
         color: map-get($colores, primero);
-        @include font($font-principal, 400, normal, calc(1rem + .8vw + .8vh));  
+        @include font($font-principal, 400, normal, calc(1rem + .6vw + .6vh));  
         line-height: 1.5;
+        
+        .fas, .fab{
+            font-size: calc((1rem + .6vw + .6vh)*1.2);
+        }
     }
     
     &__li{

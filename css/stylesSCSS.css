@@ -684,8 +684,10 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     font-family: "Rubik", verdana, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: calc(1rem + .8vw + .8vh);
+    font-size: calc(1rem + .6vw + .6vh);
     line-height: 1.5; }
+    .contactInfo__ul .fas, .contactInfo__ul .fab {
+      font-size: calc((1rem + .6vw + .6vh)*1.2); }
   .contactInfo__li {
     margin: 2.5vw; }
 
@@ -1291,7 +1293,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   .contactInfo__gmap, .contactInfo__ul {
     width: 80vw; }
   .contactInfo__gmap {
-    max-height: 34vh; }
+    max-height: 34vh;
+    margin-bottom: calc(1vw + 1vh); }
   .text__h1 {
     font-size: calc(2.8rem + 6vw); }
   .text__h2 {
