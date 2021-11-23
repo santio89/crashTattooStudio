@@ -373,7 +373,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
 .nav__submenu {
   position: relative; }
   .nav__submenu__list {
-    backdrop-filter: blur(20px);
     position: absolute;
     top: 2.5rem;
     right: 0;
@@ -383,6 +382,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     background-color: rgba(14, 16, 26, 0.9);
     border-radius: 0 0 0 calc(.4vw + .4vh);
     text-shadow: 0 0 0.2rem #191d32;
+    backdrop-filter: blur(20px);
     display: none; }
   .nav__submenu:hover .nav__submenu__list {
     display: flex;

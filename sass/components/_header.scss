@@ -80,7 +80,6 @@
         position: relative;
         
         &__list{
-            backdrop-filter: blur(20px);
             position: absolute;
             top: 2.5rem;
             right: 0;
@@ -90,6 +89,7 @@
             background-color: rgba(14, 16, 26, .9);
             border-radius: 0 0 0 calc(.4vw + .4vh);
             text-shadow: 0 0 .2rem map-get($colores, primero); 
+            backdrop-filter: blur(20px);
             display: none; 
         }
 
