@@ -21,7 +21,7 @@
         @include font($font-principal, 400, normal, calc(1rem + .6vw + .6vh));  
         line-height: 1.5;
         
-        .fas, .fab{
+        .contactInfo__icon{
             font-size: calc((1rem + .6vw + .6vh)*1.2);
         }
     }
