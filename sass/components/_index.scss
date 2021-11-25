@@ -15,13 +15,7 @@
         height: auto;     
         position: relative;
         margin: calc(1vw + 1vh) auto calc(2vw + 2vh) auto;
-  
-        &__img{
-            border-radius: calc(.25vw + .25vh) calc(.25vw + .25vh) 0 0;
-            width: 100%;
-            height: auto;
-        }
-
+        
         &::after {
             content: '';
             position: absolute;
@@ -29,7 +23,7 @@
             background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
             background-size: 200% 200%;   
             z-index: -1;
-            border-radius: calc(.5vw + .5vh);
+            border-radius: calc(.25vw + .25vh);
             transition: 200ms;     
         }
 
@@ -45,13 +39,30 @@
             right: clamp(-.35rem, -.3vw, -.3rem);  
             animation: lineaGradienteAnimation 1000ms linear infinite alternate-reverse; 
         }
+
+        &:hover .tatuador__details{
+            filter: grayscale(0%);
+            transition: filter 400ms;
+        }
+        &__img{
+            border-radius: calc(.25vw + .25vh);
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+        }
     }
 }
 
 .tatuador__details{
     @include flexbox(column wrap, space-evenly, stretch);
-    background-color: map-get($colores, tercero);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(61, 184, 255, .6);
     border-radius: 0 0 calc(.25vw + .25vh) calc(.25vw + .25vh);
+    filter: grayscale(80%);
+
     &__h3{
         @include font ($font-principal, bold, normal, 1.8rem);
         padding-top: calc(.2rem + .4vw + .4vh);
