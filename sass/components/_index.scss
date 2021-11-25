@@ -44,12 +44,12 @@
             filter: grayscale(0%);
             transition: filter 400ms;
         }
+
         &__img{
             border-radius: calc(.25vw + .25vh);
             width: 100%;
             height: auto;
             position: relative;
-            overflow: hidden;
         }
     }
 }
@@ -58,8 +58,8 @@
     @include flexbox(column wrap, space-evenly, stretch);
     width: 100%;
     position: absolute;
-    bottom: 0px;
-    background-color: rgba(61, 184, 255, .6);
+    bottom: 0;
+    background-color: rgba(61, 184, 255, .5);
     border-radius: 0 0 calc(.25vw + .25vh) calc(.25vw + .25vh);
     filter: grayscale(80%);
 
