@@ -15,6 +15,13 @@
         height: auto;     
         position: relative;
         margin: calc(1vw + 1vh) auto calc(2vw + 2vh) auto;
+
+        &__img{
+            border-radius: calc(.25vw + .25vh);
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
         
         &::after {
             content: '';
@@ -40,16 +47,9 @@
             animation: lineaGradienteAnimation 1000ms linear infinite alternate-reverse; 
         }
 
-        &:hover .tatuador__details{
+        &:hover .tatuador__details, &:focus .tatuador__details{
             filter: grayscale(0%);
             transition: filter 400ms;
-        }
-
-        &__img{
-            border-radius: calc(.25vw + .25vh);
-            width: 100%;
-            height: auto;
-            position: relative;
         }
     }
 }

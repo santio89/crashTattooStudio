@@ -506,6 +506,11 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     height: auto;
     position: relative;
     margin: calc(1vw + 1vh) auto calc(2vw + 2vh) auto; }
+    .artistas__tatuador__img {
+      border-radius: calc(.25vw + .25vh);
+      width: 100%;
+      height: auto;
+      position: relative; }
     .artistas__tatuador::after {
       content: '';
       position: absolute;
@@ -524,14 +529,9 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
       left: clamp(-0.35rem, -0.3vw, -0.3rem);
       right: clamp(-0.35rem, -0.3vw, -0.3rem);
       animation: lineaGradienteAnimation 1000ms linear infinite alternate-reverse; }
-    .artistas__tatuador:hover .tatuador__details {
+    .artistas__tatuador:hover .tatuador__details, .artistas__tatuador:focus .tatuador__details {
       filter: grayscale(0%);
       transition: filter 400ms; }
-    .artistas__tatuador__img {
-      border-radius: calc(.25vw + .25vh);
-      width: 100%;
-      height: auto;
-      position: relative; }
 
 .tatuador__details {
   display: flex;
