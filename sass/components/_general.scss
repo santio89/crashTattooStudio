@@ -207,7 +207,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
     background-size: 200% 200%;
     color: map-get($colores, cuarto);
-    border-radius: calc(1vw + 1vh); 
+    border-radius: calc(.5vw + .5vh); 
     padding: calc(.3rem + .3vw + .3vh);
     margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;   
     cursor: pointer;
