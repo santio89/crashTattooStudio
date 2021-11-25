@@ -35,18 +35,21 @@ window.onclick = function(e) {
 /* input file-show selected files on label */
 var inputs = document.querySelectorAll(".contactForm__file__input");
 
-Array.prototype.forEach.call(inputs, function(input){
-    var label = input.nextElementSibling;
-    var labelVal = label.innerHTML;
-
-    input.addEventListener("change", function(e){
-        fileName = e.target.value.split("\\").pop();
+if (inputs.length > 0){
+    Array.prototype.forEach.call(inputs, function(input){
+        var label = input.nextElementSibling;
+        var labelVal = label.innerHTML;
         
-        if (fileName){
-        label.querySelector("span").innerHTML = fileName;
-        } else{
-        label.innerHTML = labelVal;
-        }
+        input.addEventListener("change", function(e){
+            fileName = e.target.value.split("\\").pop();
+            
+            if (fileName){
+            label.querySelector("span").innerHTML = fileName;
+            } else{
+            label.innerHTML = labelVal;
+            }
+        });
     });
-});
+}
+
 /*fin input file-show selected files on label */
