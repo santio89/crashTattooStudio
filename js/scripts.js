@@ -29,6 +29,24 @@ window.onclick = function(e) {
     }
   }
 /* fin volver al tamaño inicial */
-
 /* fin studio/gallery img -> transform:scale on click*/
 
+
+/* input file-show selected files on label */
+var inputs = document.querySelectorAll(".contactForm__file__input");
+
+Array.prototype.forEach.call(inputs, function(input){
+    var label = input.nextElementSibling;
+    var labelVal = label.innerHTML;
+
+    input.addEventListener("change", function(e){
+        fileName = e.target.value.split("\\").pop();
+        
+        if (fileName){
+        label.querySelector("span").innerHTML = fileName;
+        } else{
+        label.innerHTML = labelVal;
+        }
+    });
+});
+/*fin input file-show selected files on label */

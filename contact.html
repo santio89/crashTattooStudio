@@ -110,9 +110,9 @@
                 <textarea id="textArea" placeholder="Escriba su mensaje&#10;Puede adjuntar un diseño para presupuestar" name="texto" required class="contactForm__textArea"></textarea>
             </div>
 
-            <div>  
-                <label for="file" hidden>Subir Imagen</label>              
-                <input type="file" id="file" name="file" aria-label="Subir Imagen" class="contactForm__file">                 
+            <div class="contactForm__fileWrapper">  
+                <input type="file" id="file" name="file" class="contactForm__file__input" data-multiple-caption="{count} files selected" aria-label="Subir Imagen">
+                <label for="file" class="contactForm__file"><span>Adjuntar Archivo</span></label>                                              
             </div>
 
             <div data-netlify-recaptcha="true" class="contactForm__recaptcha"></div>

@@ -132,18 +132,40 @@
         }
     }
 
-    &__file{
-        font-size: .6em;
+    &__fileWrapper{
+        @include flexbox (row wrap, left, center);
         width: MAX(70vw, 280px);
-        color: map-get($colores, primero);
+    }
+    
+    &__file{
+        font-size: .8em;
+        font-weight: 500;
+        color: map-get($colores, cuarto);
         cursor: pointer;
         margin-bottom: calc(1vw + 1vh);
+        padding: .2em;
+        background-color: map-get($colores, segundo);
+        border-radius: calc(.2vw + .2vh);
+        background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo));
+        filter: grayscale(10%);
 
-        &:focus{
-            outline: 1px solid map-get($colores, primero);
+        &:hover, &:focus{
+            filter: grayscale(0%);
+            box-shadow: 0 0 .25rem 0rem map-get($colores, tercero);
         }
-    }
 
+        &__input{
+            opacity: 0;
+            height: 0;
+            width: 0;
+
+            &:focus + .contactForm__file{
+                filter: grayscale(0%);
+                box-shadow: 0 0 .5rem 0rem map-get($colores, tercero);
+            }
+        }       
+    }
+   
     &__recaptcha{
         align-self: center;
     }

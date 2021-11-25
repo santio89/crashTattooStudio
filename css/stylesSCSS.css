@@ -800,14 +800,33 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     .contactForm__textArea::placeholder {
       color: rgba(25, 29, 50, 0.5);
       font-style: italic; }
+  .contactForm__fileWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    width: MAX(70vw, 280px); }
   .contactForm__file {
-    font-size: .6em;
-    width: MAX(70vw, 280px);
-    color: #191d32;
+    font-size: .8em;
+    font-weight: 500;
+    color: white;
     cursor: pointer;
-    margin-bottom: calc(1vw + 1vh); }
-    .contactForm__file:focus {
-      outline: 1px solid #191d32; }
+    margin-bottom: calc(1vw + 1vh);
+    padding: .2em;
+    background-color: #f81298;
+    border-radius: calc(.2vw + .2vh);
+    background: linear-gradient(270deg, #3db8ff, #f81298);
+    filter: grayscale(10%); }
+    .contactForm__file:hover, .contactForm__file:focus {
+      filter: grayscale(0%);
+      box-shadow: 0 0 0.25rem 0rem #3db8ff; }
+    .contactForm__file__input {
+      opacity: 0;
+      height: 0;
+      width: 0; }
+      .contactForm__file__input:focus + .contactForm__file {
+        filter: grayscale(0%);
+        box-shadow: 0 0 0.5rem 0rem #3db8ff; }
   .contactForm__recaptcha {
     align-self: center; }
   .contactForm__reset {
