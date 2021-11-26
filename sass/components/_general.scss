@@ -227,7 +227,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     color: map-get($colores, cuarto);
     border-radius: calc(.5vw + .5vh); 
     padding: calc(.3rem + .3vw + .3vh);
-    margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;   
+    margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;
+    max-width: 90%;   
     cursor: pointer;
     display: inline-block;
     border: none;
@@ -235,9 +236,9 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     outline-offset: .8rem;
     position: relative;
     text-align: center;
-    transition: 300ms;
-    max-width: 90%;
-    
+    animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse;
+    transition: 300ms;   
+
     &::before {
         content: '';
         position: absolute;
@@ -247,18 +248,16 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
         border-radius: inherit;
         background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo));
         background-size: 400%;
-        animation: 4000ms buttonBorder infinite linear alternate;
+        animation: 4000ms lineaGradienteAnimation infinite linear alternate;
         transition: 300ms;
       }
     
-    &:hover, &:focus{
-        animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 4000ms lineaGradienteAnimation linear infinite alternate-reverse, 3000ms buttonBorder infinite linear alternate;
-        transition: 300ms;      
+    &:hover, &:focus{   
         outline-offset: -.1rem;
     }
 
     &:active{
-        animation: 2000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse, 2000ms buttonBorder infinite linear alternate;
+        animation: 3000ms buttonTextShadow linear infinite alternate-reverse, 2000ms lineaGradienteAnimation linear infinite alternate-reverse;
         padding-top: calc(.2rem + .2vw + .2vh);
         padding-bottom: calc(.2rem + .2vw + .2vh);
         transition: 150ms;

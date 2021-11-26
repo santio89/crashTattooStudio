@@ -209,6 +209,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   border-radius: calc(.5vw + .5vh);
   padding: calc(.3rem + .3vw + .3vh);
   margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;
+  max-width: 90%;
   cursor: pointer;
   display: inline-block;
   border: none;
@@ -216,8 +217,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   outline-offset: .8rem;
   position: relative;
   text-align: center;
-  transition: 300ms;
-  max-width: 90%; }
+  animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse;
+  transition: 300ms; }
   .bigButton::before {
     content: '';
     position: absolute;
@@ -227,14 +228,12 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     border-radius: inherit;
     background: linear-gradient(270deg, #3db8ff, #f81298);
     background-size: 400%;
-    animation: 4000ms buttonBorder infinite linear alternate;
+    animation: 4000ms lineaGradienteAnimation infinite linear alternate;
     transition: 300ms; }
   .bigButton:hover, .bigButton:focus {
-    animation: 4000ms buttonTextShadow linear infinite alternate-reverse, 4000ms lineaGradienteAnimation linear infinite alternate-reverse, 3000ms buttonBorder infinite linear alternate;
-    transition: 300ms;
     outline-offset: -.1rem; }
   .bigButton:active {
-    animation: 2000ms buttonTextShadow linear infinite alternate-reverse, 3000ms lineaGradienteAnimation linear infinite alternate-reverse, 2000ms buttonBorder infinite linear alternate;
+    animation: 3000ms buttonTextShadow linear infinite alternate-reverse, 2000ms lineaGradienteAnimation linear infinite alternate-reverse;
     padding-top: calc(.2rem + .2vw + .2vh);
     padding-bottom: calc(.2rem + .2vw + .2vh);
     transition: 150ms;
@@ -1240,14 +1239,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     text-shadow: 0 0 1.8rem #3db8ff; }
   100% {
     text-shadow: 0 0 0.8rem #f81298; } }
-
-@keyframes buttonBorder {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
 
 @media all and (max-width: 1600px) {
   .gallery__img {
