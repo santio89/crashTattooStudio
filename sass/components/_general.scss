@@ -157,6 +157,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
         border-image-slice: 1;     
         transition: 5ms;   
         margin: auto;
+        box-sizing: content-box; 
         width: 90%;
         max-width: 350px;
         min-width: 280px;
@@ -164,7 +165,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
         max-height: calc(100vh - 8rem);
         min-height: 460px;
         aspect-ratio: 3 / 5;
-        box-sizing: content-box; 
         
         /* inicio antialiasing */
         outline: 1px solid transparent;  

@@ -9,18 +9,21 @@
     align-items: center;
 
     &__tatuador{
+        position: relative;
+        margin: calc(1vw + 1vh) auto calc(2vw + 2vh) auto;
         width: 80%;
         max-width: 350px;
         min-width: 300px;
         height: auto;     
-        position: relative;
-        margin: calc(1vw + 1vh) auto calc(2vw + 2vh) auto;
-
+        
         &__img{
+            position: relative;
             border-radius: calc(.25vw + .25vh);
             width: 100%;
-            height: auto;
-            position: relative;
+            height: auto;       
+            max-height: calc(100vh - 8rem);
+            min-height: 460px;
+            aspect-ratio: 3 / 5;
         }
         
         &::after {
