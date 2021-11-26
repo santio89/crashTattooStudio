@@ -155,6 +155,9 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     max-width: 350px;
     min-width: 280px;
     height: auto;
+    max-height: calc(100vh - 8rem);
+    min-height: 460px;
+    aspect-ratio: 3 / 5;
     box-sizing: content-box;
     /* inicio antialiasing */
     outline: 1px solid transparent;
