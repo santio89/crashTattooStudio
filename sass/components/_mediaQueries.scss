@@ -41,7 +41,7 @@
         color: white;
         text-shadow: 0 0 .2rem map-get($colores, segundo);
         transform: rotate(0deg);
-        transition: transform 200ms;
+        transition: transform 100ms;
     }
     .nav__link__arrow{
         display: inline; 
@@ -57,7 +57,7 @@
         height: 0;
         overflow: hidden;
         width: 100%;
-        transition: height 200ms;
+        transition: height 100ms;
     }
     .header__burgerIcon:hover{
         color: map-get($colores, segundo);
@@ -71,13 +71,19 @@
         color: map-get($colores, segundo);
         text-shadow: 0 0 .4rem map-get($colores, segundo);
         transform: rotate(90deg);
-        transition: transform 200ms;
+        transition: transform 100ms;
     } 
     .header__burgerMenu:checked ~ .header__nav {
         height: 220px;
-        transition: height 200ms;
+        transition: height 100ms;
     } 
+    .header__burgerMenu:checked ~ .header__nav .nav__link{
+        visibility: visible;
+    }
     .nav{
+        &__link{
+            visibility: hidden;
+        }
         &__list{
             display: block;  
             width: 100%;        

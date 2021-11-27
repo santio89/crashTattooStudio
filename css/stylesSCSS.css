@@ -1279,7 +1279,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     color: white;
     text-shadow: 0 0 0.2rem #f81298;
     transform: rotate(0deg);
-    transition: transform 200ms; }
+    transition: transform 100ms; }
   .nav__link__arrow {
     display: inline;
     font-size: 1.2rem; }
@@ -1292,7 +1292,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     height: 0;
     overflow: hidden;
     width: 100%;
-    transition: height 200ms; }
+    transition: height 100ms; }
   .header__burgerIcon:hover {
     color: #f81298;
     text-shadow: 0 0 0.4rem #f81298; }
@@ -1303,10 +1303,14 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     color: #f81298;
     text-shadow: 0 0 0.4rem #f81298;
     transform: rotate(90deg);
-    transition: transform 200ms; }
+    transition: transform 100ms; }
   .header__burgerMenu:checked ~ .header__nav {
     height: 220px;
-    transition: height 200ms; }
+    transition: height 100ms; }
+  .header__burgerMenu:checked ~ .header__nav .nav__link {
+    visibility: visible; }
+  .nav__link {
+    visibility: hidden; }
   .nav__list {
     display: block;
     width: 100%;
