@@ -359,8 +359,8 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     opacity: 0; }
   .header__burgerIcon {
     font-size: 0;
-    margin-right: auto;
-    margin-left: .5rem;
+    margin-left: auto;
+    margin-right: .5rem;
     color: white;
     display: none; }
   .header__nav {
@@ -1269,9 +1269,6 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     display: block; } }
 
 @media all and (max-width: 1024px), all and (pointer: coarse) {
-  .header__logo {
-    margin-right: .5rem;
-    margin-left: auto; }
   .header__burgerIcon {
     display: initial;
     font-size: 3.2rem;
