@@ -1286,8 +1286,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     left: 0;
     height: 0;
     overflow: hidden;
-    width: 100%;
-    transition: height 100ms; }
+    width: 100%; }
   .nav__link {
     visibility: hidden; }
     .nav__link__arrow {
