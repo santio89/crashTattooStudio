@@ -350,6 +350,10 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
       line-height: 2;
       word-spacing: calc(.4vw + .4vh);
       text-shadow: 0 0 0.8rem #f81298; }
+  .header__burgerMenu {
+    width: 0;
+    height: 0;
+    opacity: 0; }
   .header__burgerIcon {
     font-size: 0;
     margin-right: auto;
@@ -1287,6 +1291,9 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
     width: 100%;
     transition: height 200ms; }
   .header__burgerIcon:hover {
+    color: #f81298;
+    text-shadow: 0 0 0.4rem #f81298; }
+  .header__burgerMenu:focus + .header__burgerIcon {
     color: #f81298;
     text-shadow: 0 0 0.4rem #f81298; }
   .header__burgerMenu:checked + .header__burgerIcon {

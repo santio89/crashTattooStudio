@@ -50,7 +50,6 @@
             text-shadow: 0 0 .4rem map-get($colores, segundo);
         } 
     }
- 
     .header__nav{
         position: fixed;
         top: 4rem;
@@ -61,6 +60,10 @@
         transition: height 200ms;
     }
     .header__burgerIcon:hover{
+        color: map-get($colores, segundo);
+        text-shadow: 0 0 .4rem map-get($colores, segundo);
+    }
+    .header__burgerMenu:focus + .header__burgerIcon{
         color: map-get($colores, segundo);
         text-shadow: 0 0 .4rem map-get($colores, segundo);
     }
