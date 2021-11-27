@@ -43,13 +43,6 @@
         transform: rotate(0deg);
         transition: transform 100ms;
     }
-    .nav__link__arrow{
-        display: inline; 
-        font-size: 1.2rem;     
-        &:hover, &:focus{
-            text-shadow: 0 0 .4rem map-get($colores, segundo);
-        } 
-    }
     .header__nav{
         position: fixed;
         top: 4rem;
@@ -59,30 +52,16 @@
         width: 100%;
         transition: height 100ms;
     }
-    .header__burgerIcon:hover{
-        color: map-get($colores, segundo);
-        text-shadow: 0 0 .4rem map-get($colores, segundo);
-    }
-    .header__burgerMenu:focus + .header__burgerIcon{
-        color: map-get($colores, segundo);
-        text-shadow: 0 0 .4rem map-get($colores, segundo);
-    }
-    .header__burgerMenu:checked + .header__burgerIcon{
-        color: map-get($colores, segundo);
-        text-shadow: 0 0 .4rem map-get($colores, segundo);
-        transform: rotate(90deg);
-        transition: transform 100ms;
-    } 
-    .header__burgerMenu:checked ~ .header__nav {
-        height: 220px;
-        transition: height 100ms;
-    } 
-    .header__burgerMenu:checked ~ .header__nav .nav__link{
-        visibility: visible;
-    }
     .nav{
         &__link{
             visibility: hidden;
+            &__arrow{
+                display: inline; 
+                font-size: 1.2rem;     
+                &:hover, &:focus{
+                    text-shadow: 0 0 .4rem map-get($colores, segundo);
+                } 
+            }
         }
         &__list{
             display: block;  
@@ -116,6 +95,29 @@
             font-size: 3rem; 
         }
     }   
+    .header__burgerIcon:hover{
+        color: map-get($colores, segundo);
+        text-shadow: 0 0 .4rem map-get($colores, segundo);
+    }
+    .header__burgerMenu{
+        &:focus + .header__burgerIcon{
+            color: map-get($colores, segundo);
+            text-shadow: 0 0 .4rem map-get($colores, segundo);    
+        }
+        &:checked + .header__burgerIcon{
+            color: map-get($colores, segundo);
+            text-shadow: 0 0 .4rem map-get($colores, segundo);
+            transform: rotate(90deg);
+            transition: transform 100ms;
+        } 
+        &:checked ~ .header__nav {
+            height: 220px;
+            transition: height 100ms;
+        } 
+        &:checked ~ .header__nav .nav__link{
+            visibility: visible;
+        }
+    }
     .whats{
         grid-column: 2 / 3;
         grid-row: 1 / 3;
