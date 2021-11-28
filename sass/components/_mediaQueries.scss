@@ -30,6 +30,11 @@
  }
 
 @media all and (max-width:1024px), all and (pointer: coarse){ 
+    .header{
+        &__burgerMenu{
+            display: initial;
+        }
+    }
     .header__burgerIcon{
         display: initial;
         font-size: 3.2rem;
@@ -37,7 +42,7 @@
         color: white;
         text-shadow: 0 0 .2rem map-get($colores, segundo);
         transform: rotate(0deg);
-        transition: transform 100ms;
+        transition: transform 150ms;
     }
     .header__nav{
         position: fixed;
@@ -45,11 +50,11 @@
         left: 0;  
         height: 0;
         overflow: hidden;
-        width: 100%;       
+        width: 100%;    
+        transition: height 150ms;   
     }
     .nav{
         &__link{
-            visibility: hidden;
             &__arrow{
                 display: inline; 
                 font-size: 1.2rem;     
@@ -107,10 +112,10 @@
         } 
         &:checked ~ .header__nav {
             height: 220px;
-            transition: height 100ms;
+            transition: height 150ms;
         } 
-        &:checked ~ .header__nav .nav__link{
-            visibility: visible;
+        &:not(:checked) ~ .header__nav .nav__link{
+            animation: vis 100ms;
         }
     }
     .whats{

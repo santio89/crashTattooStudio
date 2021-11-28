@@ -1,3 +1,8 @@
+@keyframes vis{
+  100% {
+    visibility: hidden;
+  }
+}
 @keyframes titulo{
     0% {
         letter-spacing: 5vw;
