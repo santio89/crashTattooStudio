@@ -1332,7 +1332,7 @@ a:hover {
     transform: rotate(90deg);
     transition: transform 100ms; }
   .header__burgerMenu:checked ~ .header__nav {
-    height: 220px;
+    height: 250px;
     transition: height 150ms; }
   .header__burgerMenu:not(:checked) ~ .header__nav .nav__link {
     animation: vis 100ms; }
