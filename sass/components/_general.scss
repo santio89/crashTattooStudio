@@ -38,16 +38,11 @@ a:hover{
     color: map-get($colores, cuarto);
 }
 
-p, a, ul, ol, li, h1, h2, h3, table, label, input{
-    transition: font-size 200ms;
-}   
-
 .section{      
     @include flexbox (column wrap, space-evenly, center);    
     text-align: center;   
     align-content:center;
 }
-
 
 /* overlay hero */
 .landing{
@@ -80,6 +75,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input{
     margin-top: calc(4rem + .8vw + .8vh);
     color: map-get($colores, primero);
 }
+/* fin overlay hero */
 
 .text{
     &__p{

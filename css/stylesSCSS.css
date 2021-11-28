@@ -36,9 +36,6 @@ ul {
 a:hover {
   color: white; }
 
-p, a, ul, ol, li, h1, h2, h3, table, label, input {
-  transition: font-size 200ms; }
-
 .section {
   display: flex;
   flex-flow: column wrap;
@@ -74,6 +71,7 @@ p, a, ul, ol, li, h1, h2, h3, table, label, input {
   margin-top: calc(4rem + .8vw + .8vh);
   color: #191d32; }
 
+/* fin overlay hero */
 .text__p {
   font-family: "Rubik", verdana, sans-serif;
   font-weight: 400;
