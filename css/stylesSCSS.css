@@ -523,7 +523,7 @@ a:hover {
     margin: calc(1vw + 1vh) auto calc(2vw + 2vh) auto;
     width: 80%;
     max-width: 350px;
-    min-width: 300px;
+    min-width: 280px;
     height: auto; }
     .artistas__tatuador__img {
       position: relative;
