@@ -38,6 +38,11 @@ a:hover{
     color: map-get($colores, cuarto);
 }
 
+::selection{
+    background: rgba(248, 18, 152, .8);
+    color: rgb(255, 255, 255);
+}
+
 .section{      
     @include flexbox (column wrap, space-evenly, center);    
     text-align: center;   
