@@ -732,16 +732,17 @@ a:hover {
 /* FIN INFO CONTACTO */
 /* INICIO FORM */
 .contactForm {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   font-family: "Rubik", verdana, sans-serif;
   font-weight: 800;
   font-style: italic;
   font-size: calc(1rem + .4vw + .4vh);
   color: #191d32;
   margin: calc(2vw + 2vh) auto calc(4vw + 4vh) auto; }
+  .contactForm__details {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
   .contactForm__motivoInput {
     width: 0;
     height: 0;
@@ -750,6 +751,8 @@ a:hover {
       box-shadow: 0px 0.5rem 1rem -0.5rem #3db8ff;
       filter: grayscale(0%);
       transition: filter 500ms; }
+    .contactForm__motivoInput__reserva:checked ~ .contactForm__details > .contactForm__dateWrapper {
+      display: block; }
   .contactForm__motivoLabel {
     font-size: calc(1.4em + .5vw + .5vh);
     font-style: normal;
@@ -770,6 +773,26 @@ a:hover {
       box-shadow: 0px 0.5rem 1rem -0.5rem #3db8ff;
       filter: grayscale(0%);
       transition: filter 500ms; }
+  .contactForm__dateWrapper {
+    display: none;
+    width: MAX(70vw, 280px); }
+    .contactForm__dateWrapper__dateLabel {
+      font-size: 1.2em;
+      font-weight: 500;
+      width: 100%; }
+    .contactForm__dateWrapper__date {
+      font-weight: 400;
+      font-size: 1.2em;
+      background: linear-gradient(270deg, #3db8ff, #f81298);
+      border-radius: calc(.25vw + .25vh);
+      outline: none;
+      border: none;
+      color: #191d32;
+      width: 80%; }
+    .contactForm__dateWrapper__nota {
+      font-weight: 400;
+      color: rgba(25, 29, 50, 0.6);
+      width: 100%; }
   .contactForm__nombre, .contactForm__email {
     margin-top: calc(.2vw + .2vh);
     margin-bottom: calc(.2vw + .2vh);
@@ -830,7 +853,7 @@ a:hover {
     margin-bottom: calc(1vw + 1vh);
     padding: .2em;
     background-color: #f81298;
-    border-radius: calc(.2vw + .2vh);
+    border-radius: calc(.125vw + .125vh);
     background: linear-gradient(270deg, #3db8ff, #f81298);
     filter: grayscale(10%); }
     .contactForm__file:hover, .contactForm__file:focus {
@@ -849,7 +872,7 @@ a:hover {
     width: MAX(35vw, 140px);
     min-width: 140px;
     padding: .2em;
-    border-radius: calc(.5vw + .5vh);
+    border-radius: calc(.25vw + .25vh);
     border: none;
     outline: none;
     text-align: center;
@@ -873,7 +896,7 @@ a:hover {
     width: MAX(35vw, 140px);
     min-width: 118px;
     padding: .2em;
-    border-radius: calc(.5vw + .5vh);
+    border-radius: calc(.25vw + .25vh);
     border: none;
     outline: none;
     text-align: center;

@@ -88,38 +88,45 @@
 
         <!-- INICIO FORM - DATA NETLIFY-->
         <form name="contact" method="POST" data-aos="fade-left" class="contactForm" data-netlify="true" data-netlify-recaptcha="true">
-            <div>   
-                <input type="radio" name="motivo" value="consulta" id="consulta" class="contactForm__motivoInput" checked>
-                <label for="consulta" class="contactForm__motivoLabel">Consulta</label>
-                <input type="radio" name="motivo" value="reserva" id="reserva" class="contactForm__motivoInput">
-                <label for="reserva" class="contactForm__motivoLabel">Reserva</label>
-            </div>
+              
+            <input type="radio" name="motivo" value="consulta" id="consulta" class="contactForm__motivoInput" checked>
+            <label for="consulta" class="contactForm__motivoLabel">Consulta</label>
+            <input type="radio" name="motivo" value="reserva" id="reserva" class="contactForm__motivoInput contactForm__motivoInput__reserva">
+            <label for="reserva" class="contactForm__motivoLabel">Reserva</label>
+        
+            <div class="contactForm__details">
+                <div class="contactForm__dateWrapper">
+                    <label for="date" class="contactForm__dateWrapper__dateLabel">Fecha tentativa</label>
+                    <input type="date" id="date" name="fecha" class="contactForm__dateWrapper__date">
+                    <p class="contactForm__dateWrapper__nota">Nos comunicaremos para confirmar el turno</p>
+                </div>
 
-            <div>
-                <label for="email" hidden>E-Mail:</label>
-                <input type="email" name="email" id="email" placeholder="E-Mail" autocomplete="off" required class="contactForm__email">
-            </div>
+                <div>
+                    <label for="email" hidden>E-Mail:</label>
+                    <input type="email" name="email" id="email" placeholder="E-Mail" autocomplete="off" required class="contactForm__email">
+                </div>
 
-            <div>
-                <label for="nombre" hidden>Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="off" required class="contactForm__nombre"> 
-            </div>
+                <div>
+                    <label for="nombre" hidden>Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="off" required class="contactForm__nombre"> 
+                </div>
 
-            <div>
-                <label  for="textArea" hidden>Mensaje</label>
-                <textarea id="textArea" placeholder="Escriba su mensaje&#10;Puede adjuntar un diseño para presupuestar" name="texto" required class="contactForm__textArea"></textarea>
-            </div>
+                <div>
+                    <label  for="textArea" hidden>Mensaje</label>
+                    <textarea id="textArea" placeholder="Escriba su mensaje&#10;Puede adjuntar un diseño para presupuestar" name="texto" required class="contactForm__textArea"></textarea>
+                </div>
 
-            <div class="contactForm__fileWrapper">  
-                <input type="file" id="file" name="file" class="contactForm__file__input" data-multiple-caption="{count} files selected" aria-label="Subir Imagen">
-                <label for="file" class="contactForm__file"><span>Adjuntar Archivo</span></label>                                              
-            </div>
+                <div class="contactForm__fileWrapper">  
+                    <input type="file" id="file" name="file" class="contactForm__file__input" aria-label="Subir Imagen">
+                    <label for="file" class="contactForm__file"><span>Adjuntar Archivo</span></label>                                              
+                </div>
 
-            <div data-netlify-recaptcha="true" class="contactForm__recaptcha"></div>
+                <div data-netlify-recaptcha="true" class="contactForm__recaptcha"></div>
 
-            <div>
-                <input type="reset" value="RESET" id="reset" class="contactForm__reset">
-                <input type="submit" value="ENVIAR" id="enviar" class="contactForm__enviar">
+                <div>
+                    <input type="reset" value="RESET" id="reset" class="contactForm__reset">
+                    <input type="submit" value="ENVIAR" id="enviar" class="contactForm__enviar">
+                </div>
             </div>
         </form>
         <!-- FIN FORM -->
