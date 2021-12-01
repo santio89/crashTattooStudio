@@ -65,6 +65,7 @@
     background-color: rgba(61, 184, 255, .5);
     border-radius: 0 0 calc(.25vw + .25vh) calc(.25vw + .25vh);
     filter: grayscale(80%);
+    transition: filter 400ms;
 
     &__h3{
         @include font ($font-principal, bold, normal, 1.8rem);

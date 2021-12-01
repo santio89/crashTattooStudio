@@ -565,7 +565,8 @@ a:hover {
   bottom: 0;
   background-color: rgba(61, 184, 255, 0.5);
   border-radius: 0 0 calc(.25vw + .25vh) calc(.25vw + .25vh);
-  filter: grayscale(80%); }
+  filter: grayscale(80%);
+  transition: filter 400ms; }
   .tatuador__details__h3 {
     font-family: "Rubik", verdana, sans-serif;
     font-weight: bold;
