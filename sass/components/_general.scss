@@ -118,6 +118,7 @@ a:hover{
             @include font($font-principal, 600, italic, 1.4em);
             padding: .5rem;
             margin: 0;
+            margin-left: 5vw;
             text-align: left; 
         }
     }

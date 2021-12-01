@@ -10,6 +10,7 @@
 
     &__pregunta{
         cursor: pointer;
+        background-color:map-get($colores, primero);
         margin-bottom: calc(1vw + 1vh);
         width: 100%;
     }
@@ -19,6 +20,8 @@
         width: 60%;
         font-size: 1.1em;
         margin: 0 auto calc(2vw + 2vh) 0;  
+        margin-left: 5vw;
+        
         &--reserva{
             text-align: center;
             line-height: initial;
