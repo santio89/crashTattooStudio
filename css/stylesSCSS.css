@@ -712,8 +712,15 @@ a:hover {
     max-width: 80vw;
     max-height: 44vh;
     height: 50vh;
-    border: 0.1rem solid #191d32;
-    border-radius: calc(.5vw + .5vh); }
+    border: 0.18rem solid #191d32;
+    outline: 0.38rem solid #f81298;
+    box-shadow: 0 0 0 0.8rem #3db8ff;
+    border-radius: calc(.5vw + .5vh);
+    filter: grayscale(40%);
+    transition: filter 300ms; }
+    .contactInfo__gmap:hover, .contactInfo__gmap:focus {
+      filter: grayscale(0%);
+      transition: filter 300ms; }
   .contactInfo__ul {
     text-align: left;
     width: 45vw;
