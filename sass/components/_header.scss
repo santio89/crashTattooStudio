@@ -103,6 +103,10 @@
         &:hover &__list{
             @include flexbox (column wrap, flex-start, flex-end);
         }
+        
+        &:hover, &:focus{
+            text-shadow: 0 0 .4rem map-get($colores, segundo);   
+        }
     }
 
     &__whatsapp{  

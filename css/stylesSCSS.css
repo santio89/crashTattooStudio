@@ -413,6 +413,8 @@ a:hover {
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-end; }
+  .nav__submenu:hover, .nav__submenu:focus {
+    text-shadow: 0 0 0.4rem #f81298; }
 
 .nav__whatsapp {
   font-size: 4rem;
