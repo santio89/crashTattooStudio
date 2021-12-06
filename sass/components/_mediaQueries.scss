@@ -107,7 +107,7 @@
         &:checked + .header__burgerIcon{
             color: map-get($colores, segundo);
             text-shadow: 0 0 .4rem map-get($colores, segundo);
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
             transition: transform 100ms;
         } 
         &:checked ~ .header__nav {

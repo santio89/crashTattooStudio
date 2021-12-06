@@ -89,7 +89,8 @@ a:hover {
   font-weight: 900;
   font-style: normal;
   font-size: calc(3.2rem + 6vw);
-  letter-spacing: calc(.5vw + .5vh); }
+  letter-spacing: calc(.5vw + .5vh);
+  margin: 0; }
 
 .text__h2 {
   font-family: "Rubik", verdana, sans-serif;
@@ -114,7 +115,7 @@ a:hover {
   width: 100%;
   text-shadow: 0 0 0.4rem #f81298;
   text-align: center;
-  margin-top: calc(2vw + 2vh); }
+  margin: 0; }
   .text__h3--faq {
     font-family: "Rubik", verdana, sans-serif;
     font-weight: 600;
@@ -148,7 +149,7 @@ a:hover {
 
 /* INICIO CAROUSEL */
 .carouselGallery {
-  margin: calc(3vw + 3vh) auto calc(1vw + 1vh) auto; }
+  margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto; }
   .carouselGallery__imgContainer {
     padding: 0; }
   .carouselGallery__img {
@@ -519,7 +520,7 @@ a:hover {
 /* FIN FOOTER */
 /* INICIO ARTISTAS CARDS */
 .artistas {
-  margin: calc(2vw + 2vh) auto calc(2vw + 2vh) auto;
+  margin: calc(2vw + 2vh) auto calc(1vw + 1vh) auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
@@ -596,7 +597,7 @@ a:hover {
 /* INICIO GALERIA - STUDIO */
 .studioGallery {
   width: 100%;
-  margin: calc(2vw + 2vh) auto calc(2vw + 2vh) auto;
+  margin: 0 auto calc(2vw + 2vh) auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -1370,7 +1371,7 @@ a:hover {
   .header__burgerMenu:checked + .header__burgerIcon {
     color: #f81298;
     text-shadow: 0 0 0.4rem #f81298;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transition: transform 100ms; }
   .header__burgerMenu:checked ~ .header__nav {
     height: 250px;

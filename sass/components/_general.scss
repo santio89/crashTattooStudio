@@ -92,6 +92,7 @@ a:hover{
     &__h1{
         @include font($font-principal, 900, normal, map-get($font-size, h1));
         letter-spacing: calc(.5vw + .5vh);  
+        margin: 0;
     } 
     
     &__h2{
@@ -112,7 +113,7 @@ a:hover{
         width: 100%;
         text-shadow: 0 0 .4rem map-get($colores, segundo);
         text-align: center;
-        margin-top: calc(2vw + 2vh);
+        margin: 0;
     
         &--faq{
             @include font($font-principal, 600, italic, 1.4em);
@@ -152,7 +153,7 @@ a:hover{
 
 /* INICIO CAROUSEL */
 .carouselGallery{
-    margin: calc(3vw + 3vh) auto calc(1vw + 1vh) auto;
+    margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto;
     
     &__imgContainer{
         padding: 0;
