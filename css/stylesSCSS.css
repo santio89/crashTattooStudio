@@ -148,7 +148,7 @@ a:hover {
 
 /* INICIO CAROUSEL */
 .carouselGallery {
-  margin: calc(3vw + 3vh) auto calc(2vw + 2vh) auto; }
+  margin: calc(3vw + 3vh) auto calc(1vw + 1vh) auto; }
   .carouselGallery__imgContainer {
     padding: 0; }
   .carouselGallery__img {
@@ -611,7 +611,7 @@ a:hover {
 /* INICIO GALERIA - GALLERY */
 .gallery {
   width: 100%;
-  margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto;
+  margin: calc(3vw + 3vh) auto calc(2vw + 2vh) auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -713,7 +713,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto; }
+  margin: calc(3vw + 3vh) auto calc(2vw + 2vh) auto; }
   .contactInfo__gmap {
     width: 45vw;
     max-width: 80vw;
