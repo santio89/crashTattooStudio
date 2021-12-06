@@ -932,10 +932,6 @@ a:hover {
       animation: lineaGradienteAnimation 1s linear infinite alternate-reverse; }
 
 /* FIN FORM */
-@keyframes vis {
-  100% {
-    visibility: hidden; } }
-
 @keyframes titulo {
   0% {
     letter-spacing: 5vw;
