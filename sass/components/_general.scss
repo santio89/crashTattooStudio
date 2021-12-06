@@ -152,7 +152,7 @@ a:hover{
 
 /* INICIO CAROUSEL */
 .carouselGallery{
-    margin: calc(4vw + 4vh) auto calc(2vw + 2vh) auto;
+    margin: calc(3vw + 3vh) auto calc(2vw + 2vh) auto;
     
     &__imgContainer{
         padding: 0;
@@ -167,11 +167,11 @@ a:hover{
         box-sizing: content-box; 
         width: 90%;
         max-width: 350px;
-        min-width: 280px;
+        min-width: MAX(280px, 90%);
         height: auto; 
-        max-height: calc(100vh - 8rem);
-        min-height: 460px;
-        aspect-ratio: 3 / 5;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: 50% 25%;
         
         /* inicio antialiasing */
         outline: 1px solid transparent;  
@@ -209,6 +209,8 @@ a:hover{
         min-width: MAX(280px, 90%);
         height: auto;     
         cursor: pointer;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
         border: 0px solid transparent;
         border-top: 1rem solid transparent;
         border-image: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo), map-get($colores, tercero));
