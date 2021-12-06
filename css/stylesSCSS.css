@@ -164,7 +164,6 @@ a:hover {
     height: auto;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    object-position: 50% 25%;
     /* inicio antialiasing */
     outline: 1px solid transparent;
     backface-visibility: hidden;
