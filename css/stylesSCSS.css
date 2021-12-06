@@ -713,7 +713,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  margin: calc(3vw + 3vh) auto calc(2vw + 2vh) auto; }
+  margin: calc(3vw + 3vh) auto calc(3vw + 3vh) auto; }
   .contactInfo__gmap {
     width: 45vw;
     max-width: 80vw;
