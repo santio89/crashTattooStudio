@@ -90,7 +90,7 @@
                 background-color: rgba(14, 16, 26, .9);  
                 border-radius: 0;
             }
-            &:hover &__list{
+            &:hover &__list, &:focus &__list{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;

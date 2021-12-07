@@ -1367,7 +1367,7 @@ a:hover {
     line-height: calc(1.5rem);
     background-color: rgba(14, 16, 26, 0.9);
     border-radius: 0; }
-  .nav__submenu:hover .nav__submenu__list {
+  .nav__submenu:hover .nav__submenu__list, .nav__submenu:focus .nav__submenu__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
