@@ -395,6 +395,11 @@ a:hover {
     text-shadow: 0 0 0.4rem #f81298; }
   .nav__link__arrow {
     display: none; }
+  .nav__link:focus ~ .nav__submenu__list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-end; }
 
 .nav__submenu {
   position: relative; }
@@ -1339,6 +1344,14 @@ a:hover {
     font-size: 1.2rem; }
     .nav__link__arrow:hover, .nav__link__arrow:focus {
       text-shadow: 0 0 0.4rem #f81298; }
+  .nav__link:focus ~ .nav__submenu__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center; }
   .nav__list {
     display: block;
     width: 100%;

@@ -81,6 +81,9 @@
         &__arrow{
             display: none;
         }
+        &:focus ~ .nav__submenu__list{
+            @include flexbox (column wrap, flex-start, flex-end);
+        }
     }
 
     &__submenu{
