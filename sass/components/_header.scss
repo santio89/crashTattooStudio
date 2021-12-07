@@ -99,7 +99,7 @@
             background-color: rgba(14, 16, 26, .9);
             border-radius: 0 0 0 calc(.4vw + .4vh);
             text-shadow: 0 0 .2rem map-get($colores, primero); 
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(2px);
             display: none; 
         }
 
