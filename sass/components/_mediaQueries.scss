@@ -111,7 +111,7 @@
             transition: transform 150ms;
         } 
         &:checked ~ .header__nav {
-            height: 250px;
+            height: 220px;
             transition: height 150ms;
         } 
         &:not(:checked) ~ .header__nav .nav__link{
