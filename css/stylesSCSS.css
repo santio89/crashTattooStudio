@@ -415,7 +415,7 @@ a:hover {
     text-shadow: 0 0 0.2rem #191d32;
     backdrop-filter: blur(2px);
     display: none; }
-  .nav__submenu:hover .nav__submenu__list {
+  .nav__submenu:hover .nav__submenu__list, .nav__submenu:focus .nav__submenu__list {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;

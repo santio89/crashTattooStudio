@@ -103,7 +103,7 @@
             display: none; 
         }
 
-        &:hover &__list{
+        &:hover &__list, &:focus &__list{
             @include flexbox (column wrap, flex-start, flex-end);
         }
         
