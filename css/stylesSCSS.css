@@ -1319,7 +1319,7 @@ a:hover {
     color: white;
     text-shadow: 0 0 0.2rem #f81298;
     transform: rotate(0deg);
-    transition: transform 150ms; }
+    transition: transform 200ms; }
   .header__nav {
     position: fixed;
     top: 4rem;
@@ -1327,7 +1327,7 @@ a:hover {
     height: 0;
     overflow: hidden;
     width: 100%;
-    transition: height 150ms; }
+    transition: height 200ms; }
   .nav__link__arrow {
     display: inline;
     font-size: 1.2rem; }
@@ -1371,7 +1371,7 @@ a:hover {
     transition: transform 100ms; }
   .header__burgerMenu:checked ~ .header__nav {
     height: 250px;
-    transition: height 150ms; }
+    transition: height 200ms; }
   .header__burgerMenu:not(:checked) ~ .header__nav .nav__link {
     animation: vis 100ms; }
   .whats {
