@@ -1412,7 +1412,7 @@ a:hover {
     width: 80vw; }
   .contactInfo__gmap {
     max-height: 34vh;
-    margin-bottom: calc(1vw + 1vh); }
+    margin-bottom: calc(2vw + 2vh); }
   .text__h1 {
     font-size: calc(2.8rem + 6vw); }
   .text__h2 {
