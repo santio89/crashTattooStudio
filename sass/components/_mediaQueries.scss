@@ -42,7 +42,7 @@
         color: white;
         text-shadow: 0 0 .2rem map-get($colores, segundo);
         transform: rotate(0deg);
-        transition: transform 200ms;
+        transition: transform 150ms;
     }
     .header__nav{
         position: fixed;
@@ -51,7 +51,7 @@
         height: 0;
         overflow: hidden;
         width: 100%;    
-        transition: height 200ms;   
+        transition: height 150ms;   
     }
     .nav{
         &__link{
@@ -108,14 +108,15 @@
             color: map-get($colores, segundo);
             text-shadow: 0 0 .4rem map-get($colores, segundo);
             transform: rotate(-90deg);
-            transition: transform 100ms;
+            transition: transform 150ms;
         } 
         &:checked ~ .header__nav {
             height: 250px;
-            transition: height 200ms;
+            transition: height 150ms;
         } 
         &:not(:checked) ~ .header__nav .nav__link{
-            animation: vis 100ms;
+            animation: vis 150ms;
+            visibility: hidden;
         }
     }
     .whats{
