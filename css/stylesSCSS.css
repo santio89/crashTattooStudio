@@ -1338,7 +1338,8 @@ a:hover {
     height: 0;
     overflow: hidden;
     width: 100%;
-    transition: height 150ms; }
+    transition: height 150ms;
+    display: block; }
   .nav__link__arrow {
     display: inline;
     font-size: 1.2rem; }
@@ -1353,9 +1354,11 @@ a:hover {
     justify-items: center;
     align-items: center; }
   .nav__list {
-    display: block;
+    display: flex;
+    flex-flow: column;
     width: 100%;
     text-align: center;
+    margin: auto;
     line-height: 2rem;
     font-size: 1.8rem;
     text-shadow: 0 0 0.4vw rgba(14, 16, 26, 0.5);

@@ -54,20 +54,20 @@ if (inputs.length > 0){
 /*fin input file-show selected files on label */
 
 /* INICIO cerrar nav burger si hago click fuera del area */
-var nav__anchor = document.getElementsByClassName("nav__link");
+var nav__link = document.getElementsByClassName("nav__link");
 var header__burgerMenu = document.getElementById("header__burgerMenu");
 
 /* cerrar nav burger al hacer click en un link (util para single page layouts) */
-for (let i=0; i < nav__anchor.length; i++)
+for (let i=0; i < nav__link.length; i++)
 {
-    nav__anchor[i].addEventListener("click", function() {
+    nav__link[i].addEventListener("click", function() {
         header__burgerMenu.checked = false;
     });
 }
 /* fin cerrar nav burger al hacer click en un link (util para single page layouts) */
 
 /* agregar EventListener cuando el nav burger sea abierto */
-var nav = document.getElementById("header__nav");
+var header__nav = document.getElementById("header__nav");
 var header__burgerIcon__icon = document.getElementById("header__burgerIcon__icon");
 
 header__burgerMenu.addEventListener( 'click', function(){
@@ -79,7 +79,7 @@ header__burgerMenu.addEventListener( 'click', function(){
 
 /* cerrar nav si hago click fuera del nav o del icono burger */
 var listener = function( e ) {
-if( e.target != header__burgerMenu && e.target != nav && e.target != header__burgerIcon__icon) {
+if( e.target != header__burgerMenu && e.target != header__nav  && e.target != header__burgerIcon__icon) {
     header__burgerMenu.checked = false;
     document.removeEventListener( 'click', listener );
 }
@@ -93,7 +93,6 @@ window.addEventListener('resize', function() {
     if (window.matchMedia('(min-width:1025px)').matches && !window.matchMedia('(pointer: coarse').matches) {
         document.getElementById('header__burgerMenu').checked = false;
     } 
-    
   }, true);
 
 /* FIN cerrar burger nav si estaba abierto y hago resize hasta un tamaño en el que ya no existe */
