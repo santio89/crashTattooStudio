@@ -78,11 +78,16 @@ header__burgerMenu.addEventListener( 'click', function(){
 /* fin agregar EventListener cuando el nav burger sea abierto */
 
 /* cerrar nav si hago click fuera del nav o del icono burger */
+var nav__li = document.getElementsByClassName("nav__li");
+
 var listener = function( e ) {
-if( e.target != header__burgerMenu && e.target != header__nav  && e.target != header__burgerIcon__icon) {
-    header__burgerMenu.checked = false;
-    document.removeEventListener( 'click', listener );
-}
+    for (let i=0; i<nav__li.length;i++){     
+        let nav__li = nav__li[i];
+        if( e.target != header__burgerMenu && e.target != header__nav  && e.target != header__burgerIcon__icon && e.target != nav__li){
+            header__burgerMenu.checked = false;
+            document.removeEventListener( 'click', listener );
+        }
+    }
 };
 /* fin cerrar nav si hago click fuera del nav o del icono burger */
 

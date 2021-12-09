@@ -52,7 +52,6 @@
         overflow: hidden;
         width: 100%;    
         transition: height 150ms;   
-        display: block;
     }
     .nav{
         &__link{
@@ -74,11 +73,9 @@
             }
         }
         &__list{
-            display: flex;  
-            flex-flow: column;
+            display: block;  
             width: 100%;        
             text-align: center;
-            margin: auto;
             line-height: 2rem;
             font-size: 1.8rem;  
             text-shadow: 0 0 .4vw rgba(14, 16, 26, .5);    
