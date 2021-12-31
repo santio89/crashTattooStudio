@@ -172,7 +172,7 @@ a:hover {
     will-change: transform;
     perspective: 1000;
     /* fin antialiasing */
-    transform: skew(-5deg);
+    /* transform: skew(-5deg); */
     animation: borderAnimation 2000ms linear infinite; }
   .carouselGallery__prev {
     left: -4%; }
