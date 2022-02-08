@@ -11,7 +11,7 @@ html{
     overflow-y: scroll;
 
     /* scrollbar standard (mas abajo scrollbar para webkit) */
-    
+    scrollbar-width: thin;
     scrollbar-color: map-get($colores, primero) #f1f1f1;
 }
 

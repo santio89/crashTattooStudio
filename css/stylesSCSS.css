@@ -11,6 +11,7 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   /* scrollbar standard (mas abajo scrollbar para webkit) */
+  scrollbar-width: thin;
   scrollbar-color: #191d32 #f1f1f1; }
 
 /* INICIO SCROLLBAR */
