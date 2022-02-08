@@ -9,7 +9,36 @@ html{
     scroll-padding-top: 4rem;
     overflow-x: hidden;
     overflow-y: scroll;
+
+    /* scrollbar standard (mas abajo scrollbar para webkit) */
+    
+    scrollbar-color: map-get($colores, primero) #f1f1f1;
 }
+
+/* INICIO SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(248, 18, 152, .7), rgba(61, 184, 255, .7));
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(248, 18, 152, 1), rgba(61, 184, 255, 1));
+  }
+
+  /* FIN SCROLLBAR */
 
 ul, ol, li, a, h1, h2, h3, p, body, header, section, footer, .container, .container-fluid, .row, .col{
     margin: 0;
@@ -334,29 +363,3 @@ a:hover{
     }
 }
 /* FIN GRIDBOARD/HIDDEN MESSAGE */
-
-
-/* INICIO SCROLLBAR */
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(248, 18, 152, .7), rgba(61, 184, 255, .7));
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgba(248, 18, 152, 1), rgba(61, 184, 255, 1));
-  }
-
-  /* FIN SCROLLBAR */
