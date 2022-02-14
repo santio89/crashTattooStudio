@@ -27,7 +27,7 @@ window.onclick = function(e) {
          
         };
     }
-  }
+}
 /* fin volver al tamaño inicial */
 /* fin studio/gallery img -> transform:scale on click*/
 
