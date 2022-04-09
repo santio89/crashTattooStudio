@@ -475,10 +475,14 @@ a:hover {
     font-style: normal;
     font-size: calc(1rem + .2vw);
     align-self: flex-start;
-    margin-left: .2rem;
-    color: white; }
-    .footer__santi:focus {
-      outline: 2px dashed #3db8ff; }
+    margin-left: .4rem;
+    color: white;
+    border-radius: 0 .8rem 0 .8rem;
+    padding: .4em;
+    margin-bottom: .8rem; }
+    .footer__santi:hover, .footer__santi:focus {
+      outline: 2px dashed #3db8ff;
+      color: #3db8ff; }
   .footer__copyright {
     font-family: "Lora", "Times New Roman", serif;
     font-weight: 400;
@@ -486,7 +490,9 @@ a:hover {
     font-size: calc(1rem + .2vw);
     border-top: 0.1rem solid white;
     align-self: center;
-    width: 100%; }
+    width: 100%;
+    padding-top: .52rem;
+    padding-bottom: .52rem; }
   .footer__sitemap {
     font-family: "Rubik", verdana, sans-serif;
     font-weight: 600;

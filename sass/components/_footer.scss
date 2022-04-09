@@ -36,11 +36,15 @@
     &__santi{
         @include font ($font-secundaria, 400, normal, calc(1rem + .2vw));
         align-self: flex-start;
-        margin-left: .2rem;
+        margin-left: .4rem;
         color: map-get($colores, cuarto);
+        border-radius: 0 .8rem 0 .8rem ;
+        padding: .4em;
+        margin-bottom: .8rem;
 
-        &:focus{
+        &:hover, &:focus{
             outline: 2px dashed map-get($colores, tercero);
+            color: map-get($colores, tercero);
         }
     }
 
@@ -49,6 +53,8 @@
         border-top: .1rem solid map-get($colores, cuarto);
         align-self: center;
         width: 100%;
+        padding-top: .52rem;
+        padding-bottom: .52rem;
     }
 
     &__sitemap{
