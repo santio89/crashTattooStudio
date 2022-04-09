@@ -37,6 +37,11 @@
         @include font ($font-secundaria, 400, normal, calc(1rem + .2vw));
         align-self: flex-start;
         margin-left: .2rem;
+        color: map-get($colores, cuarto);
+
+        &:focus{
+            outline: 2px dashed map-get($colores, tercero);
+        }
     }
 
     &__copyright{

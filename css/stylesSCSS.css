@@ -475,7 +475,10 @@ a:hover {
     font-style: normal;
     font-size: calc(1rem + .2vw);
     align-self: flex-start;
-    margin-left: .2rem; }
+    margin-left: .2rem;
+    color: white; }
+    .footer__santi:focus {
+      outline: 2px dashed #3db8ff; }
   .footer__copyright {
     font-family: "Lora", "Times New Roman", serif;
     font-weight: 400;
