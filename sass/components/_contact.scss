@@ -125,7 +125,6 @@
         border:none;
         outline: none;
         border-bottom: .1vw solid map-get($colores, primero);  
-        font-style: italic;
         border-radius: calc(.5vw + .5vh) calc(.5vw + .5vh) 0 0;
         background: linear-gradient(270deg, map-get($colores, tercero), map-get($colores, segundo));
         background-size: 0% 3px;

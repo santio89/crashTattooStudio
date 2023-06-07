@@ -835,7 +835,6 @@ a:hover {
     border: none;
     outline: none;
     border-bottom: 0.1vw solid #191d32;
-    font-style: italic;
     border-radius: calc(.5vw + .5vh) calc(.5vw + .5vh) 0 0;
     background: linear-gradient(270deg, #3db8ff, #f81298);
     background-size: 0% 3px;
